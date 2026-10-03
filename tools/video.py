@@ -592,15 +592,15 @@ def inputs_mtime(ch):
     return max(f.stat().st_mtime for f in files if f.exists())
 
 
-def render_chapter(ch, preview=None):
+def render_chapter(ch, preview=None, start=0.0):
     audio = AUDIO_DIR / f"Snowmoon - Chapter {ch:02d}.m4a"
     words_file = ROOT / "audio" / "work" / f"words_ch{ch:02d}.json"
     if not words_file.exists():
         raise RuntimeError(f"chapter {ch}: no word alignment (run align.py first)")
     secs = duration(audio)
     if preview:
-        secs = min(secs, preview)
-    out = OUT_DIR / (f"ch{ch:02d}_preview.mp4" if preview else f"ch{ch:02d}.mp4")
+        secs = min(secs, start + preview)
+    out = OUT_DIR / (f"ch{ch:02d}_preview_{int(start)}.mp4" if preview else f"ch{ch:02d}.mp4")
     if out.exists() and not preview and abs(duration(out) - secs) < 0.5 and out.stat().st_mtime > inputs_mtime(ch):
         return out
     OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -614,14 +614,19 @@ def render_chapter(ch, preview=None):
     rendered = {}
     tmp = out.with_suffix(".tmp.mp4")
     n_frames = math.ceil(secs * FPS)
+    first_frame = int(round(start * FPS))
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
-           "-r", str(FPS), "-i", "-", "-i", str(audio), "-map", "0:v", "-map", "1:a",
+           "-r", str(FPS), "-i", "-", "-ss", f"{first_frame / FPS:.3f}", "-i", str(audio), "-map", "0:v", "-map", "1:a",
            "-c:v", "libx264", "-preset", "veryfast", "-crf", "23", "-pix_fmt", "yuv420p", "-threads", "3",
            "-c:a", "copy", "-shortest", "-movflags", "+faststart", str(tmp)]
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE, stderr=subprocess.PIPE)
     base = None
+    if first_frame:
+        for _ in range(120):   # let the automaton settle as it would have by then
+            life.step(track.at(start)[1])
+        caps.frame(start)
     try:
-        for n in range(n_frames):
+        for n in range(first_frame, n_frames):
             t = n / FPS
             hue, energy, glyphs = track.at(t)
             every = max(1, int(round(4.5 - 3.5 * energy)))   # calm: a step every 4 frames; restless: every frame
@@ -676,8 +681,8 @@ def render_chapter(ch, preview=None):
         err = ff.stderr.read().decode(errors="replace")[-800:]
         tmp.unlink(missing_ok=True)
         raise RuntimeError(f"ffmpeg failed for chapter {ch} (exit {rc}): {err}")
-    if abs(duration(tmp) - secs) > 0.5:
-        raise RuntimeError(f"chapter {ch}: rendered {duration(tmp):.1f}s, expected {secs:.1f}s")
+    if abs(duration(tmp) - (secs - first_frame / FPS)) > 0.5:
+        raise RuntimeError(f"chapter {ch}: rendered {duration(tmp):.1f}s, expected {secs - first_frame / FPS:.1f}s")
     tmp.rename(out)
     return out
 
@@ -715,13 +720,14 @@ def main():
     ap.add_argument("--chapters", default="1-32")
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--join", action="store_true")
-    ap.add_argument("--preview", type=float, help="render only the first N seconds of the first chapter given")
+    ap.add_argument("--preview", type=float, help="render only N seconds of the first chapter given")
+    ap.add_argument("--start", type=float, default=0.0, help="with --preview: start at this second")
     args = ap.parse_args()
     if args.join:
         join()
         return
     if args.preview:
-        print(render_chapter(chapters_arg(args.chapters)[0], preview=args.preview))
+        print(render_chapter(chapters_arg(args.chapters)[0], preview=args.preview, start=args.start))
         return
     with concurrent.futures.ProcessPoolExecutor(args.workers) as pool:
         for path in pool.map(render_chapter, chapters_arg(args.chapters)):
