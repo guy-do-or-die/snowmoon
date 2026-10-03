@@ -556,9 +556,21 @@ def events(ch, words):
                 continue
             lines = [(u["speaker"], u["text"]) for u in by_id.get(iid, [])]
             pages = panel_pages(lines, it["kind"])
-            share = (t_end - (t - 0.5)) / len(pages)
+            # pages turn as the reading reaches them: the share of the text a page starts at, mapped
+            # onto the item's spoken words at the same share of their characters
+            chars = [sum(len(ln) for _, ln in page) for page in pages]
+            spoken = [w for w in words if w["line"] == iid]
+            cum, total = [], 0
+            for w in spoken:
+                total += len(w["word"]); cum.append(total)
+            bounds = [t - 0.5]
+            for k in range(1, len(pages)):
+                share = sum(chars[:k]) / sum(chars)
+                idx = next((i for i, c in enumerate(cum) if c >= share * total), None)
+                bounds.append(spoken[idx]["t0"] - 0.3 if idx is not None else t + (ends.get(iid, t) - t) * share)
+            bounds.append(t_end)
             for k, page in enumerate(pages):
-                ev.append((t - 0.5 + k * share, t - 0.5 + (k + 1) * share, "panel", (page, it["kind"])))
+                ev.append((bounds[k], bounds[k + 1], "panel", (page, it["kind"])))
     if ch == 32:
         end = next((starts[u["id"]] for u in final if u.get("cue") == "ending" and u["id"] in starts), None)
         if end:
