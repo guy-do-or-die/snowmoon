@@ -1,0 +1,255 @@
+{
+  "chapter": 26,
+  "characters": [
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia thread; a Keeper in the Order of Steering, husband of Seila, father of Zven and Lily. Thoughtful, earnest, calm and curious; in these chapters more confident and argumentative (pitches the court case to the judges), tender with his family. Occasionally speaks slow, careful Dzegoban."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen, 18",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego thread; national Minpentai champion and gifted cryptographer, now supervising drone combat for the Kungaupei and Veridia. Quick, precise, fluent technical explainer; playful with friends; tense, despairing and then elated during the battles (ch26, ch29-30). Occasionally speaks Dzegoban."
+    },
+    {
+      "name": "Den",
+      "letter": "D",
+      "gender": "male",
+      "age": "adult (senior figure)",
+      "kind": "human",
+      "origin": "Dzego",
+      "voice_notes": "High Council member of the Kungaupei (Dzego's shadow defence organisation), Zei's mentor and mission commander. Composed, authoritative, dry and blunt; leads Group South and is killed in ch29 (his ch30 line is a remembered quote)."
+    },
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen, about 18 (Zei's peer)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Minpentai player, formerly Zei's rival, now his close and affectionate ally. Confident, socially astute, a persuasive negotiator (ch28); steady and supportive under pressure (ch29); teasing humour."
+    },
+    {
+      "name": "Verdow",
+      "letter": "V",
+      "gender": "male",
+      "age": "adult (senator, middle-aged or older; has a daughter)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Senator Verdow: warm, jovial, quick to laugh, internationally minded; the senator Gladias trusts. Gives long reflective, philosophical speeches (law in ch25, society and the future in ch32)."
+    },
+    {
+      "name": "Mu",
+      "letter": "M",
+      "gender": "female",
+      "age": "older adult (described earlier as an older woman)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Kungaupei member and former Minpentai tournament organiser, a mentor figure to Zei and Bai. Calm, soft-spoken, quietly brilliant improviser who stays cool in a crisis; gentle, with wry humour."
+    },
+    {
+      "name": "entry gate",
+      "letter": "E",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "device",
+      "origin": "Veridia (Meldan airport)",
+      "voice_notes": "Automated border/passport gate; one short synthetic greeting (two gates say it almost in unison)."
+    },
+    {
+      "name": "flight announcer",
+      "letter": "N",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "announcer",
+      "origin": "Dzego (flight from Dzego to Meldan)",
+      "voice_notes": "Aeroplane cabin announcement spoken entirely in Dzegoban (N-coded quote lines); smooth, formal public-address tone. Gender not given."
+    },
+    {
+      "name": "Caeron",
+      "letter": "C",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "The first judge in the booth; a Veridian judge, stiff and principled, defensive of the military and of judicial detachment, gets irritated. Gender not stated."
+    },
+    {
+      "name": "Sewlert",
+      "letter": "S",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "The second judge in the booth (spelled 'Sewlert' in dialogue and 'Selwert' once in narration); dismissive, blunt, lectures Gladias about democracy and court procedure. Gender not stated."
+    },
+    {
+      "name": "Zevin",
+      "letter": "Z",
+      "gender": "male",
+      "age": "adult (has a son)",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "The third judge in the booth; quiet, hesitant, sympathetic to Gladias because his son is trapped in Northglade. One line."
+    }
+  ],
+  "letters": {
+    "Z": "Zei",
+    "G": "Gladias",
+    "D": "Den",
+    "E": "entry gate",
+    "V": "Verdow",
+    "B": "Bai",
+    "M": "Mu",
+    "C": "Caeron",
+    "S": "Sewlert"
+  },
+  "exceptions": [
+    {
+      "id": "26:190",
+      "letter": "Z",
+      "speaker": "Zevin"
+    }
+  ],
+  "narrator_exceptions": [
+    {
+      "id": "26:5",
+      "run": 0,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:9",
+      "run": 0,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:11",
+      "run": 0,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:13",
+      "run": 0,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:16",
+      "run": 0,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:18",
+      "run": 0,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:20",
+      "run": 0,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:20",
+      "run": 1,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:20",
+      "run": 2,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:22",
+      "run": 0,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:22",
+      "run": 1,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:22",
+      "run": 2,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:22",
+      "run": 3,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:24",
+      "run": 0,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:24",
+      "run": 1,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:24",
+      "run": 2,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:26",
+      "run": 0,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:26",
+      "run": 1,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:26",
+      "run": 2,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:28",
+      "run": 0,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:28",
+      "run": 1,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:28",
+      "run": 2,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:31",
+      "run": 0,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:31",
+      "run": 1,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:31",
+      "run": 2,
+      "speaker": "flight announcer"
+    },
+    {
+      "id": "26:33",
+      "run": 0,
+      "speaker": "flight announcer"
+    }
+  ],
+  "notes": "Z is Zei except 26:190, which is the third judge, Zevin (named at 26:201). C is the first judge, Caeron (named at 26:175); S is the second judge, addressed as 'Sewlert' at 26:182 and spelled 'Selwert' in narration at 26:201 - Seila does not speak in this chapter. E (26:49) is the automated border gate (two gates speaking almost in unison), not Emerald or Evelor. M is Mu; in 26:81-26:159 Den and Mu are heard through Zei's earpiece (remote voices). NARRATOR EXCEPTIONS: the <quote> items 26:5, 26:9, 26:11, 26:13, 26:16, 26:18, 26:20, 26:22, 26:24, 26:26, 26:28, 26:31, 26:33 are the aeroplane's cabin announcement spoken aloud in Dzegoban (Gladias translates each one); they are N-coded, and I listed every run under narrator_exceptions with speaker 'flight announcer' even though that label does not start with N - drop those entries if you want the narrator to read them. 26:37 is Zei speaking Dzegoban; 26:101 and 26:109 are Zei imitating the Minpentai announcer in Dzegoban. 26:65 G follows a narrator run in the same item. All lettered attributions confident."
+}

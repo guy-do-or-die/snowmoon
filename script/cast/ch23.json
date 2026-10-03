@@ -1,0 +1,60 @@
+{
+  "chapter": 23,
+  "characters": [
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen, 18",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego thread; national Minpentai champion and gifted cryptographer. Curious, quick, precise; explains technical things fluently and matter-of-factly; friendly host to Gladias. Occasionally speaks Dzegoban."
+    },
+    {
+      "name": "Fin",
+      "letter": "F",
+      "gender": "male",
+      "age": "teen / young adult (Zei's close friend, similar age)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Zei's best friend, active in the Bansunpei (the language-reform body). Passionate, idealistic, builds to an excited rallying speech in ch18; patient, encouraging language tutor in ch23."
+    },
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen, about 18 (Zei's peer)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Minpentai player (second place in Pafogai Du), formerly Zei's rival, now ally. Confident, sharp, strategic, socially astute; orphaned and self-made; shows a gentler reflective side in ch24."
+    },
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia thread; a Keeper in the Order of Steering, husband of Seila, father of Zven and Lily. Thoughtful, earnest, a bit naive and philosophical; calm, curious, humble when wrong."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult, about Gladias's age (late 30s)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, blogger on economics and culture, mother of Zven and Lily. Sharp, quick, warm but direct; in ch21 and ch23 she is furious and shouts (lines in capitals), in ch20 a determined investigator who wins people's trust."
+    }
+  ],
+  "letters": {
+    "Z": "Zei",
+    "F": "Fin",
+    "B": "Bai",
+    "G": "Gladias",
+    "S": "Seila"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No exceptions. 23:16 (G) is Gladias answering a question Zei put to the table. In 23:28-23:53 Gladias haltingly reads/translates a Dzegoban book aloud and Fin corrects him; 23:57-23:59 is Zei translating the rest fluently. From 23:84 on, Seila is on a call with Gladias (she is the remote party), screaming in places (capitals). The Dzegoban book page at 23:23 and message header at 23:79 are N-coded. All attributions confident."
+}

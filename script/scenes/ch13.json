@@ -1,0 +1,31 @@
+{
+  "chapter": 13,
+  "scenes": [
+    {
+      "start": "13:1",
+      "setting": "GPH curtained booth, Gladias and Delwart",
+      "ambience": "restaurant"
+    },
+    {
+      "start": "13:25",
+      "setting": "out of GPH tunnels into Meldan's commercial district, call with Mov",
+      "ambience": "city_street"
+    },
+    {
+      "start": "13:46",
+      "setting": "on the autobus, finishing the call",
+      "ambience": "vehicle_interior"
+    },
+    {
+      "start": "13:51",
+      "setting": "restaurant, family dinner, Ephelion broadcast hijacks the screen",
+      "ambience": "restaurant"
+    },
+    {
+      "start": "13:75",
+      "setting": "next day, Keeper booth, hardware openness circle",
+      "ambience": null
+    }
+  ],
+  "spots": []
+}

@@ -1,0 +1,13 @@
+{
+  "chapter": 28,
+  "scenes": [
+    {"start": "28:1", "setting": "conference room, General Lektor's visit", "ambience": null},
+    {"start": "28:54", "setting": "Seila's hotel room, Zven brings news of Lily", "ambience": null},
+    {"start": "28:90", "setting": "hotel room, Lektor's result from parliament", "ambience": null}
+  ],
+  "spots": [
+    {"id": "28:5", "sound": "door_open", "why": "The door opened. It was Verdow"},
+    {"id": "28:54", "sound": "door_knock", "why": "heard a knock on the door of her room"},
+    {"id": "28:58", "sound": "door_open", "why": "She ran to the door and opened it"}
+  ]
+}

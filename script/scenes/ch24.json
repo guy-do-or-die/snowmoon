@@ -1,0 +1,12 @@
+{
+  "chapter": 24,
+  "scenes": [
+    {"start": "24:1", "setting": "Gladias's room before dawn, call with Zven", "ambience": null},
+    {"start": "24:20", "setting": "tunnels of the mountain pyramid, slow walk to the library", "ambience": null},
+    {"start": "24:34", "setting": "Pafogai Du grand library, talk with Bai", "ambience": "library"},
+    {"start": "24:65", "setting": "Den's sealed private room", "ambience": null}
+  ],
+  "spots": [
+    {"id": "24:65", "sound": "door_open", "why": "The door slowly opened"}
+  ]
+}

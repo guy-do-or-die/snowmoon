@@ -1,0 +1,17 @@
+{
+  "chapter": 29,
+  "scenes": [
+    {"start": "29:1", "setting": "snowy hilltop in Elenar Forest at sunrise, Zei, Mu and Bai", "ambience": "winter_wind"},
+    {"start": "29:22", "setting": "cramped briefing room, Lektor assigns the army groups", "ambience": "war_room"},
+    {"start": "29:41", "setting": "hilltop at sunset, the drone army massed at the forest edge", "ambience": "winter_wind"},
+    {"start": "29:50", "setting": "inside the bunker, tea; the mission begins", "ambience": null},
+    {"start": "29:56", "setting": "command post at midnight, the night battle watched on screens", "ambience": "war_room"}
+  ],
+  "spots": [
+    {"id": "29:45", "sound": "watch_buzz", "why": "Zei's watch buzzed. He turned around"},
+    {"id": "29:53", "sound": "watch_buzz", "why": "Zei's watch buzzed"},
+    {"id": "29:59", "sound": "alarm", "why": "An alarm blared"},
+    {"id": "29:90", "sound": "alarm", "why": "An alarm blared again"},
+    {"id": "29:105", "sound": "watch_buzz", "why": "And at that moment, Zei's watch buzzed"}
+  ]
+}

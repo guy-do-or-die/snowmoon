@@ -1,0 +1,90 @@
+{
+  "chapter": 6,
+  "characters": [
+    {
+      "name": "Mov",
+      "letter": "M",
+      "gender": "male",
+      "age": "adult (established Order member; Gladias's peer or slightly senior)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's close friend and mentor in the Order of Steering (a Keeper, selected as a Herald in ch. 8). Wry, sarcastic, sharp, security-paranoid but warm underneath; talks fast and knowledgeably. Partly heard by call/earpiece."
+    },
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia chapters. Thoughtful, calm, gentle, philosophical, with an occasional mischievous streak; a little awkward under pressure. Acolyte of the Order of Steering (accepted as a Keeper in ch. 8). Husband of Seila, father of Zven and Lily. Many of his lines are subvocalised whispers through a neck band."
+    },
+    {
+      "name": "Pelae",
+      "letter": "P",
+      "gender": "female",
+      "age": "teen (older teenage girl)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Citizens' assembly participant who sits next to Gladias. Curious, bright, forthright; plans to study chemistry. Some lines are whispered via neck band."
+    },
+    {
+      "name": "Alagael",
+      "letter": "A",
+      "gender": "male",
+      "age": "adult (a Herald for seven years, i.e. a retired Order member; likely middle-aged or older)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Herald who facilitates the citizens' assembly; welcoming, clear public-speaking voice with gentle humour."
+    },
+    {
+      "name": "middle-aged woman at assembly",
+      "letter": "U",
+      "gender": "female",
+      "age": "adult (middle-aged)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Soft-spoken participant at Gladias's table who speaks first; fond, contented description of her favourite square."
+    },
+    {
+      "name": "second woman at assembly",
+      "letter": "V",
+      "gender": "female",
+      "age": "adult (has a son)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Another participant at the table, a mother; speaks by whisper through a neck band but sounds clear and natural; mildly critical, practical."
+    },
+    {
+      "name": "Febric",
+      "letter": "F",
+      "gender": "male",
+      "age": "teen (older teenager, not quite an adult)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Bright, enthusiastic, affectionate programming geek; son of Vil and Daia (the co-family); calls Gladias 'Uncle Glad'."
+    },
+    {
+      "name": "Order member",
+      "letter": "O",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "One of ten robed, anonymous Order of Steering members presiding over the track-choice ceremony; solemn, formal, ritual tone, slightly thrown by Gladias's joke."
+    }
+  ],
+  "letters": {
+    "M": "Mov",
+    "G": "Gladias",
+    "P": "Pelae",
+    "A": "Alagael",
+    "U": "middle-aged woman at assembly",
+    "V": "second woman at assembly",
+    "F": "Febric",
+    "O": "Order member"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No letter is shared within the chapter. The first scene is a call (Mov heard through Gladias's earpiece; Gladias subvocalising). 6:57 Gladias speaks through his neck band; 6:75 and the second woman's 6:106 are heard via neck band/earpiece. 6:84 (G) follows a question Mov asked Pelae, but the letter marks it as Gladias. All five O runs (6:160, 6:162, 6:165, 6:167, 6:170) are treated as the same single Order member; the text introduces one speaker and never signals a change of speaker."
+}

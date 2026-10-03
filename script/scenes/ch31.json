@@ -1,0 +1,11 @@
+{
+  "chapter": 31,
+  "scenes": [
+    {"start": "31:1", "setting": "snowy mountain summit above Northglade, Deluin's arrival", "ambience": "winter_wind"},
+    {"start": "31:67", "setting": "gates and streets of the Greater Plum Harbor, crowds moving freely", "ambience": "city_street"},
+    {"start": "31:79", "setting": "the children's lodging, family reunion", "ambience": null}
+  ],
+  "spots": [
+    {"id": "31:79", "sound": "door_open", "why": "the door opened on its own"}
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "chapter": 20,
+  "characters": [
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult, about Gladias's age (late 30s)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, blogger on economics and culture, mother of Zven and Lily. Sharp, quick, warm but direct; in ch21 and ch23 she is furious and shouts (lines in capitals), in ch20 a determined investigator who wins people's trust."
+    },
+    {
+      "name": "Mov",
+      "letter": "M",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Keeper and Gladias's shadowy, security-savvy friend who does surveillance; large imposing physique. Dry, low-key, serious; apologetic and careful in ch20."
+    },
+    {
+      "name": "Telroy",
+      "letter": "T",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "A Keeper (cybersecurity rubric group) surprised at his door; cautious but polite and open, measured speaker."
+    },
+    {
+      "name": "Balme",
+      "letter": "B",
+      "gender": "female",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Kalimar)",
+      "voice_notes": "A Keeper (private-schools rubric group); soft-spoken, slightly wary at first, then curious and earnest."
+    },
+    {
+      "name": "Lectoby",
+      "letter": "L",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "A Keeper (social media openness rubric group); weary, upset and subdued because his wife is stuck in Northglade, but kind and hospitable."
+    },
+    {
+      "name": "Febric",
+      "letter": "F",
+      "gender": "male",
+      "age": "teen (older teenager)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Son of co-family Vil and Daia; computer-science kid, calm and matter-of-fact, more laconic than Hreda."
+    },
+    {
+      "name": "Hreda",
+      "letter": "H",
+      "gender": "female",
+      "age": "teen (school age, exact age not given)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Daughter of co-family Vil and Daia; a math prodigy, bright, proud and precise; frightened but brave in her written messages from Northglade."
+    }
+  ],
+  "letters": {
+    "S": "Seila",
+    "M": "Mov",
+    "T": "Telroy",
+    "B": "Balme",
+    "L": "Lectoby",
+    "F": "Febric",
+    "H": "Hreda"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No exceptions. F and H occur only inside the message block 20:12 (written text messages from Febric and Hreda, read on Seila's device; one F run, four H runs). B here is Balme (female Keeper), L is Lectoby (male Keeper), M is Mov. 20:96 is Balme speaking from behind a closed door; 20:143 is Lectoby from behind a door. News text at 20:6/20:9 and device text are N-coded. All attributions confident."
+}

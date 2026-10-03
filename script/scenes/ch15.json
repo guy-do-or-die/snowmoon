@@ -1,0 +1,42 @@
+{
+  "chapter": 15,
+  "scenes": [
+    {
+      "start": "15:1",
+      "setting": "Freetown Economics Institute restaurant, special broadcast of the Redshire invasion",
+      "ambience": null
+    },
+    {
+      "start": "15:17",
+      "setting": "Meldan: family at home watching the news at sunrise, Seila messaging Jahn",
+      "ambience": "home_interior"
+    },
+    {
+      "start": "15:37",
+      "setting": "sealed basement, call with Mov",
+      "ambience": null
+    },
+    {
+      "start": "15:53",
+      "setting": "hotel lobby restaurant, Zei in tears messaging Deluin (dateline says Pafogai Du; text places him in Sadzu Du)",
+      "ambience": null
+    },
+    {
+      "start": "15:106",
+      "setting": "same table, Su tells Zei the finals are cancelled",
+      "ambience": null
+    },
+    {
+      "start": "15:121",
+      "setting": "pyramid side entrance, long room with Den",
+      "ambience": null
+    }
+  ],
+  "spots": [
+    {
+      "id": "15:124",
+      "sound": "door_open",
+      "why": "He put his watch against a green circle. The door opened"
+    }
+  ]
+}

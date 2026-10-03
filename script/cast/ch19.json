@@ -1,0 +1,50 @@
+{
+  "chapter": 19,
+  "characters": [
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia thread; a Keeper in the Order of Steering, husband of Seila, father of Zven and Lily. Thoughtful, earnest, a bit naive and philosophical; calm, curious, humble when wrong."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen, 18",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego thread; national Minpentai champion and gifted cryptographer. Curious, quick, precise; explains technical things fluently and matter-of-factly; friendly host to Gladias. Occasionally speaks Dzegoban."
+    },
+    {
+      "name": "librarian",
+      "letter": "L",
+      "gender": "female",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Robed librarian of the Pafogai Du grand library; wry, playful, a little theatrical, amused and welcoming."
+    },
+    {
+      "name": "library robot",
+      "letter": "R",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "robot",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Drinks-service robot in the library; one short Dzegoban phrase. Flat, polite synthetic voice."
+    }
+  ],
+  "letters": {
+    "G": "Gladias",
+    "Z": "Zei",
+    "L": "librarian",
+    "R": "library robot"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No exceptions. 19:37 and 19:43 are Zei speaking Dzegoban voice commands to his watch (softer voice); 19:120 is the robot in Dzegoban. The long letter at 19:175 is N-coded on-screen text but is written in the first person by Deluin (teen male from Redshire, Zei's friend and Minpentai rival, signs it himself) - you may want Deluin's voice or a 'letter' treatment for it; I did not list it under narrator_exceptions because Deluin does not start with N and it is written, not spoken. Likewise 19:133 is a prompt typed by Deluin's program, and 19:154/19:159 contain remembered quotes inside narration. All lettered attributions confident."
+}

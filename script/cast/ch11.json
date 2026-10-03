@@ -1,0 +1,105 @@
+{
+  "chapter": 11,
+  "characters": [
+    {
+      "name": "Daia",
+      "letter": "D",
+      "gender": "female",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "'Aunt Daia', co-parent in Gladias and Seila's co-family (mother of Febric and Hreda, married to Vil). Friendly, chatty, attentive to the children."
+    },
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia chapters; newly made Keeper in the Order. Thoughtful, earnest, slightly awkward, argues carefully. Inside Keeper booths he is addressed by a number (Four, Six or Two depending on the circle)."
+    },
+    {
+      "name": "Vil",
+      "letter": "V",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "'Uncle Vil', co-parent in the co-family (father of Febric and Hreda). Considerate, a bit weary; explains his lawsuit against Divergent in detail."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, mother, economics-and-culture blogger. Warm, playful, quick; fond of Dzego; protective of the children."
+    },
+    {
+      "name": "Helisport instructor",
+      "letter": "I",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "School Helisport instructor and referee; loud, upbeat sports-announcer delivery, shouting scores across a field."
+    },
+    {
+      "name": "Helisport children",
+      "letter": "N",
+      "gender": "unknown",
+      "age": "child (ten to twelve)",
+      "kind": "crowd",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "About ten schoolchildren shouting one word in unison; excited. The line sits inside a narrator run."
+    },
+    {
+      "name": "Keeper T (air quality circle)",
+      "letter": "T",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Unnamed Keeper in the air-quality circle who knows the rubric details and pushes for higher taxes; worried about Arctic bio-attacks; earnest, a little impatient. Number not given (starts with T). Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "Keeper O (air quality circle)",
+      "letter": "O",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Unnamed Keeper in the air-quality circle; skeptic of intervention, trusts markets and technology, sarcastic, privacy-minded. Number not given (starts with O). Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "Keeper E (air quality circle)",
+      "letter": "E",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Unnamed Keeper in the air-quality circle who interjects with gossip about the quadratic-funding scandal; knowing, cynical. Number not given (starts with E). Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    }
+  ],
+  "letters": {
+    "D": "Daia",
+    "G": "Gladias",
+    "V": "Vil",
+    "S": "Seila",
+    "I": "Helisport instructor",
+    "T": "Keeper T (air quality circle)",
+    "O": "Keeper O (air quality circle)",
+    "E": "Keeper E (air quality circle)"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [
+    {
+      "id": "11:30",
+      "run": 0,
+      "speaker": "Helisport children"
+    }
+  ],
+  "notes": "D is Daia throughout (Delwart and Den do not speak in this chapter). The Keeper scene 11:95-11:123 is a third circle (air quality, Gladias is 'Two'); its T, O and E speakers are never numbered, and since numbers are assigned per circle I treat them as new people rather than Twenty/Thirteen, One or Eleven/Eighteen from chapter 10. 11:30 is a narrator run containing the children's shouted reply in quotation marks followed by a narration tag; listed in narrator_exceptions, split at the quotation marks. 11:127 is the written text of a Hydrafill advertisement (narrator quote runs), not speech."
+}

@@ -1,0 +1,50 @@
+{
+  "chapter": 22,
+  "characters": [
+    {
+      "name": "Jahn",
+      "letter": "J",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Freetown, United Cities",
+      "voice_notes": "Researcher at the Freetown Economics Institute and Seila's friend; articulate, wry, likes explaining history and economics at length; calls the taxi driver 'Chief'."
+    },
+    {
+      "name": "taxi driver",
+      "letter": "D",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Freetown, United Cities",
+      "voice_notes": "Chatty, pragmatic Freetown taxi driver with a working-class, easygoing manner; calls Jahn 'boss'. Gender not stated in the text."
+    },
+    {
+      "name": "Utaku",
+      "letter": "U",
+      "gender": "female",
+      "age": "young adult (doctoral student)",
+      "kind": "human",
+      "origin": "Belpaki, United Cities (studying in Freetown)",
+      "voice_notes": "Doctoral student at the Freetown Economics Institute; thoughtful, inquisitive, earnest, slightly worried."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen, 18",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego thread; national Minpentai champion and gifted cryptographer. Curious, quick, precise; explains technical things fluently and matter-of-factly; friendly host to Gladias. Occasionally speaks Dzegoban."
+    }
+  ],
+  "letters": {
+    "J": "Jahn",
+    "D": "taxi driver",
+    "U": "Utaku",
+    "Z": "Zei"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No exceptions. D is the unnamed Freetown taxi driver (gender not given). From 22:73 on, Jahn and Zei talk over a call (Zei is the remote party). 22:126-22:128 are Zei giving voice orders to his drone AI while Jahn listens; 22:129 and 22:130 are cut-off words. All attributions confident."
+}

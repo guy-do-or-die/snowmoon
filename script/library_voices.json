@@ -1,0 +1,86 @@
+{
+ "Zven": {
+  "voice_id": "8JVbfL6oEdmuxKn5DK2C",
+  "library_id": "8JVbfL6oEdmuxKn5DK2C",
+  "name": "JohnnyKid",
+  "gender": "male"
+ },
+ "boy with drone": {
+  "voice_id": "XjGYkUkzth8BPs29fmcV",
+  "library_id": "XjGYkUkzth8BPs29fmcV",
+  "name": "TeddyTwinkle",
+  "gender": "male"
+ },
+ "Lily": {
+  "voice_id": "RwZADRjd8b3vxKTsTtLP",
+  "library_id": "RwZADRjd8b3vxKTsTtLP",
+  "name": "Isabel",
+  "gender": "female"
+ },
+ "Hreda": {
+  "voice_id": "nDJIICjR9zfJExIFeSCN",
+  "library_id": "nDJIICjR9zfJExIFeSCN",
+  "name": "Emmaline",
+  "gender": "female"
+ },
+ "Febric": {
+  "voice_id": "3XOBzXhnDY98yeWQ3GdM",
+  "library_id": "3XOBzXhnDY98yeWQ3GdM",
+  "name": "Brayden",
+  "gender": "male"
+ },
+ "physics instructor": {
+  "voice_id": "7EgG6hUPTRSnBBfZN5tp",
+  "library_id": "7EgG6hUPTRSnBBfZN5tp",
+  "name": "DavidTeacher",
+  "gender": "male"
+ },
+ "Belgor": {
+  "voice_id": "mkZwO4JCm0yEo6WmjZjA",
+  "library_id": "mkZwO4JCm0yEo6WmjZjA",
+  "name": "Rob",
+  "gender": "male"
+ },
+ "Evelor": {
+  "voice_id": "sfJopaWaOtauCD3HKX6Q",
+  "library_id": "sfJopaWaOtauCD3HKX6Q",
+  "name": "Arthur",
+  "gender": "male"
+ },
+ "Vil": {
+  "voice_id": "gfRt6Z3Z8aTbpLfexQ7N",
+  "library_id": "gfRt6Z3Z8aTbpLfexQ7N",
+  "name": "Boyd",
+  "gender": "male"
+ },
+ "Lektor": {
+  "voice_id": "TxWZERZ5Hc6h9dGxVmXa",
+  "library_id": "TxWZERZ5Hc6h9dGxVmXa",
+  "name": "JerryB",
+  "gender": "male"
+ },
+ "Su": {
+  "voice_id": "8N2ng9i2uiUWqstgmWlH",
+  "library_id": "8N2ng9i2uiUWqstgmWlH",
+  "name": "Beth",
+  "gender": "female"
+ },
+ "Daia": {
+  "voice_id": "TDdaEMZGTCMRB4x8bVQ2",
+  "library_id": "TDdaEMZGTCMRB4x8bVQ2",
+  "name": "Tammy",
+  "gender": "female"
+ },
+ "Narrator": {
+  "voice_id": "W78pxv1enhu0qj6t6IaC",
+  "library_id": "W78pxv1enhu0qj6t6IaC",
+  "name": "Adam - Calm and Composed (Canadian)",
+  "gender": "male"
+ },
+ "_candidate_narrator_unused": {
+  "voice_id": "mI8xLTBNjMXAf31I4xlB",
+  "library_id": "mI8xLTBNjMXAf31I4xlB",
+  "name": "Loyal - Engaging and Informative (Canadian)",
+  "gender": "male"
+ }
+}

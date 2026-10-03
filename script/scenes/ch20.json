@@ -1,0 +1,24 @@
+{
+  "chapter": 20,
+  "scenes": [
+    {"start": "20:1", "setting": "Seila's bedroom at dawn, news of the Northglade invasion", "ambience": null},
+    {"start": "20:16", "setting": "Seila's house: Mov at the door, basement talk, then a taxi", "ambience": null},
+    {"start": "20:58", "setting": "apartment building and Telroy's flat", "ambience": null},
+    {"start": "20:92", "setting": "forested path through Kalimar to Balme's underground house", "ambience": "forest_path"},
+    {"start": "20:104", "setting": "inside Balme's house", "ambience": null},
+    {"start": "20:130", "setting": "Lectoby's doorstep and house", "ambience": null}
+  ],
+  "spots": [
+    {"id": "20:3", "sound": "watch_buzz", "why": "the alarm in her watch buzzed"},
+    {"id": "20:16", "sound": "door_knock", "why": "she heard a knock on her door"},
+    {"id": "20:24", "sound": "door_open", "why": "Seila cautiously opened the door"},
+    {"id": "20:64", "sound": "door_knock", "why": "They knocked"},
+    {"id": "20:66", "sound": "door_open", "why": "The man simply opened the door"},
+    {"id": "20:94", "sound": "door_knock", "why": "knocked on the door"},
+    {"id": "20:99", "sound": "door_open", "why": "The door immediately opened"},
+    {"id": "20:131", "sound": "door_knock", "why": "Seila knocked on the door"},
+    {"id": "20:136", "sound": "watch_buzz", "why": "Her watch buzzed. She got a notification"},
+    {"id": "20:141", "sound": "door_knock", "why": "knocked on the door for a third time"},
+    {"id": "20:145", "sound": "door_open", "why": "The man opened the door"}
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "chapter": 6,
+  "scenes": [
+    {
+      "start": "6:1",
+      "setting": "arriving home in cold rain; sealed basement with fake rain sound, call with Mov",
+      "ambience": "rain"
+    },
+    {
+      "start": "6:51",
+      "setting": "next morning, walking the residential street to the community center",
+      "ambience": "city_street"
+    },
+    {
+      "start": "6:57",
+      "setting": "community center meeting room, citizens' assembly",
+      "ambience": "classroom"
+    },
+    {
+      "start": "6:114",
+      "setting": "neighborhood restaurant, Febric, payment declined",
+      "ambience": "restaurant"
+    },
+    {
+      "start": "6:151",
+      "setting": "walk through Kalimar forest path, sky bridge, tunnel, under the highways",
+      "ambience": "forest_path"
+    },
+    {
+      "start": "6:156",
+      "setting": "outdoor mountain staircase and open-air top of the Order tower, track ceremony",
+      "ambience": "winter_wind"
+    }
+  ],
+  "spots": [
+    {
+      "id": "6:4",
+      "sound": "door_open",
+      "why": "The door opened. Gladias sighed, entered"
+    },
+    {
+      "id": "6:102",
+      "sound": "watch_buzz",
+      "why": "Gladias's watch buzzed, and the watches of everyone in the room buzzed at the same time"
+    },
+    {
+      "id": "6:143",
+      "sound": "data_transfer",
+      "why": "the transaction flew off into the cryptographic network. Two ticks later, it confirmed"
+    }
+  ]
+}

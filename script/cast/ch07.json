@@ -1,0 +1,80 @@
+{
+  "chapter": 7,
+  "characters": [
+    {
+      "name": "restaurant robot",
+      "letter": "R",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "robot",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Serving robot that speaks a deliberately cute, sing-song Dzegoban; the narrator supplies the translation."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen (final year of high school, about 17-18)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego chapters (full name Zei Leimin). Very bright maths/physics mind, quick and articulate, dry humour, nonchalant about danger, competitive Minpentai player; socially a bit awkward. Devoted to his mother Min."
+    },
+    {
+      "name": "Fin",
+      "letter": "F",
+      "gender": "male",
+      "age": "teen (high-school age)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Zei's best friend. Easygoing, joking, loyal and protective; bored by school, later enthusiastic about linguistics and the Bansunpei language project."
+    },
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen (same age as Zei, final year of high school)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Zei's Minpentai rival (full name Bai Jahen). Confident, taunting, proud and well-travelled; softens into grudging respect and an obvious fondness for Zei."
+    },
+    {
+      "name": "Mu",
+      "letter": "M",
+      "gender": "female",
+      "age": "older adult (described as an older woman)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Minpentai tournament organiser/mentor who knows Zei and Bai and is close to the game's rule-setters. Warm and teasing, but shrewd, measured and knowing; turns grave and lecturing in ch. 7."
+    },
+    {
+      "name": "loud automated voice",
+      "letter": "L",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "device",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Stern, loud arena PA voice giving the Minpentai countdowns in Dzegoban (all capitals); mechanical and commanding, not cute."
+    },
+    {
+      "name": "tournament announcer",
+      "letter": "A",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "announcer",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Minpentai tournament master of ceremonies addressing a large audience; showman-like, dramatic sports-announcer delivery."
+    }
+  ],
+  "letters": {
+    "R": "restaurant robot",
+    "Z": "Zei",
+    "F": "Fin",
+    "B": "Bai",
+    "M": "Mu",
+    "L": "loud automated voice",
+    "A": "tournament announcer"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No letter is shared within the chapter. 7:53 (Z) is the slogan spoken by Zei at the same moment as Bai (the narration at 7:52 says they reply together); it is marked only as Zei. 7:108 is Zei instructing his in-game AI. L runs are the arena countdown in Dzegoban; A runs (7:63, 7:64, 7:65, 7:67) are the tournament announcer. The inscription at 7:152 is a narrator-read sign."
+}

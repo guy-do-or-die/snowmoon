@@ -1,0 +1,14 @@
+{
+  "chapter": 19,
+  "scenes": [
+    {"start": "19:1", "setting": "cafeteria deep inside the mountain pyramid, lunch with Zei", "ambience": "restaurant"},
+    {"start": "19:89", "setting": "Pafogai Du grand library, the download and Deluin's message", "ambience": "library"}
+  ],
+  "spots": [
+    {"id": "19:6", "sound": "drones_flyby", "why": "a faint buzz that began to rapidly get louder ... a few small drones ... flew into view"},
+    {"id": "19:7", "sound": "watch_buzz", "why": "Gladias's watch buzzed"},
+    {"id": "19:36", "sound": "data_transfer", "why": "a file transferred from one to the other"},
+    {"id": "19:113", "sound": "data_transfer", "why": "The download started almost immediately"},
+    {"id": "19:152", "sound": "watch_buzz", "why": "Zei's hand device buzzed. The program finished executing"}
+  ]
+}

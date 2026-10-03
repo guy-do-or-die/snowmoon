@@ -1,0 +1,124 @@
+{
+  "chapter": 12,
+  "characters": [
+    {
+      "name": "Su",
+      "letter": "S",
+      "gender": "female",
+      "age": "older adult (an older woman about the same age as Mu)",
+      "kind": "human",
+      "origin": "Dzego (Sadzu Du)",
+      "voice_notes": "Lead Minpentai priest and organizer of the nationals; gracious, composed host; gentle but firm when delivering bad news in chapter 15."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen (final year of high school, about 17-18)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Bright, intense, earnest; maths-minded Minpentai prodigy now studying cryptography; protagonist of the Dzego chapters. Proud but self-aware, eager to please his mentors."
+    },
+    {
+      "name": "car driver",
+      "letter": "D",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Dzego (Sadzu Du)",
+      "voice_notes": "Driver of the black car taking Zei to the venue; one flat, matter-of-fact line."
+    },
+    {
+      "name": "Deluin",
+      "letter": "D",
+      "gender": "male",
+      "age": "teen (older teen)",
+      "kind": "human",
+      "origin": "Redshire, United Cities",
+      "voice_notes": "Foreign contestant at the Minpentai nationals; friendly, confident, witty, a little lecturing; becomes Zei's friend. In chapter 15 he is only heard through written messages from occupied Redshire."
+    },
+    {
+      "name": "Jin",
+      "letter": "J",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Dzego (Sadzu Du)",
+      "voice_notes": "Taskmaster Jin, priest and lead organizer of the national championship; formal, ceremonial public-address delivery."
+    },
+    {
+      "name": "Minpentai contestants",
+      "letter": "N",
+      "gender": "unknown",
+      "age": "teen",
+      "kind": "crowd",
+      "origin": "Dzego",
+      "voice_notes": "The assembled contestants answering the Dzegoban motto in unison. The line sits inside a narrator run."
+    },
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen (same age as Zei)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Sharp, competitive, teasing; orphan who had to fend for herself, guarded but warming up. Zei's Minpentai rival turned sparring partner."
+    },
+    {
+      "name": "Bo",
+      "letter": "B",
+      "gender": "unknown",
+      "age": "teen",
+      "kind": "human",
+      "origin": "Dzego (Sadzu Du)",
+      "voice_notes": "Bo Zume, Zei's first opponent at the nationals; one polite greeting. Gender not stated."
+    },
+    {
+      "name": "loud automated voice (Sadzu Du)",
+      "letter": "L",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "device",
+      "origin": "Dzego (Sadzu Du)",
+      "voice_notes": "Stadium countdown voice at the national championship that booms Dzegoban numerals in capitals; described as sounding more female than the Pafogai Du countdown voice of chapters 4 and 7, so cast it as a separate, female-sounding machine voice (or merge if one countdown voice is preferred)."
+    },
+    {
+      "name": "tournament announcer (Sadzu Du nationals)",
+      "letter": "A",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "announcer",
+      "origin": "Dzego (Sadzu Du)",
+      "voice_notes": "Stadium announcer at the national championship in Sadzu Du; grand, showman-like, addresses audience and players. A different venue from the Pafogai Du tournament announcer of chapters 4 and 7 (merge if one announcer voice is preferred)."
+    }
+  ],
+  "letters": {
+    "S": "Su",
+    "Z": "Zei",
+    "D": "Deluin",
+    "J": "Jin",
+    "B": "Bai",
+    "L": "loud automated voice (Sadzu Du)",
+    "A": "tournament announcer (Sadzu Du nationals)"
+  },
+  "exceptions": [
+    {
+      "id": "12:66",
+      "letter": "D",
+      "speaker": "car driver"
+    },
+    {
+      "id": "12:135",
+      "letter": "B",
+      "speaker": "Bo"
+    }
+  ],
+  "narrator_exceptions": [
+    {
+      "id": "12:98",
+      "run": 0,
+      "speaker": "Minpentai contestants"
+    }
+  ],
+  "notes": "S is Su (Seila does not speak). D is Deluin except the car driver at 12:66; Den does not speak. B is Bai (on a call, 12:106-12:128) except Bo's greeting at 12:135. J is Taskmaster Jin, not Jahn. 12:98 is a narrator run with the contestants' unison reply in quotation marks plus a narration tag; split at the quotation marks. 12:102 is a call-request notification from Bai printed as narrator text; left as narration. Gender of Jin and Bo is not stated."
+}

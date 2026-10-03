@@ -1,0 +1,32 @@
+{
+  "chapter": 9,
+  "scenes": [
+    {
+      "start": "9:1",
+      "setting": "courtyard, Bai and Fin eating; Bai in tears",
+      "ambience": "restaurant"
+    },
+    {
+      "start": "9:51",
+      "setting": "deep inside the mountain pyramid, sealed long room, meeting Den",
+      "ambience": null
+    },
+    {
+      "start": "9:105",
+      "setting": "sealed black car into a tunnel",
+      "ambience": "vehicle_interior"
+    },
+    {
+      "start": "9:110",
+      "setting": "chip fab basement and inspection facility",
+      "ambience": null
+    }
+  ],
+  "spots": [
+    {
+      "id": "9:52",
+      "sound": "door_open",
+      "why": "He tapped his watch against the circle. The door slowly opened"
+    }
+  ]
+}

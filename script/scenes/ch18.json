@@ -1,0 +1,13 @@
+{
+  "chapter": 18,
+  "scenes": [
+    {"start": "18:1", "setting": "black car from the Pafogai Du air harbor, with Zei and Bai", "ambience": "vehicle_interior"},
+    {"start": "18:46", "setting": "hotel lobby, check-in and up to the room", "ambience": null},
+    {"start": "18:57", "setting": "walk through the streets of Pafogai Du and up the pyramid incline", "ambience": "city_street"},
+    {"start": "18:87", "setting": "hotel lobby restaurant with Zei, Bai and Fin", "ambience": "restaurant"}
+  ],
+  "spots": [
+    {"id": "18:44", "sound": "door_open", "why": "The car door opened, directly into the hotel"},
+    {"id": "18:62", "sound": "door_open", "why": "The door of the car opened, and the driver stepped outside"}
+  ]
+}

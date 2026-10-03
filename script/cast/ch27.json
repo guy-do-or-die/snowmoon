@@ -1,0 +1,105 @@
+{
+  "chapter": 27,
+  "characters": [
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia thread; a Keeper in the Order of Steering, husband of Seila, father of Zven and Lily. Thoughtful, earnest, calm and curious; in these chapters more confident and argumentative (pitches the court case to the judges), tender with his family. Occasionally speaks slow, careful Dzegoban."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult, about Gladias's age (late 30s)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, blogger on economics and culture, mother of Zven and Lily. Sharp, warm, direct; the strategist behind the Silverchat poll (ch27); loving and protective with her children; calls Gladias 'Glad'."
+    },
+    {
+      "name": "Evelor",
+      "letter": "E",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan, Kalimar)",
+      "voice_notes": "Founder of Silverchat. Bluntly honest, intellectually curious, technically sharp (cryptography, AI, eigenvectors); friendly, informal host who enjoys a debate."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen, 18",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego thread; national Minpentai champion and gifted cryptographer, now supervising drone combat for the Kungaupei and Veridia. Quick, precise, fluent technical explainer; playful with friends; tense, despairing and then elated during the battles (ch26, ch29-30). Occasionally speaks Dzegoban."
+    },
+    {
+      "name": "Den",
+      "letter": "D",
+      "gender": "male",
+      "age": "adult (senior figure)",
+      "kind": "human",
+      "origin": "Dzego",
+      "voice_notes": "High Council member of the Kungaupei (Dzego's shadow defence organisation), Zei's mentor and mission commander. Composed, authoritative, dry and blunt; leads Group South and is killed in ch29 (his ch30 line is a remembered quote)."
+    },
+    {
+      "name": "Mu",
+      "letter": "M",
+      "gender": "female",
+      "age": "older adult (described earlier as an older woman)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Kungaupei member and former Minpentai tournament organiser, a mentor figure to Zei and Bai. Calm, soft-spoken, quietly brilliant improviser who stays cool in a crisis; gentle, with wry humour."
+    },
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen, about 18 (Zei's peer)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Minpentai player, formerly Zei's rival, now his close and affectionate ally. Confident, socially astute, a persuasive negotiator (ch28); steady and supportive under pressure (ch29); teasing humour."
+    },
+    {
+      "name": "Verdow",
+      "letter": "V",
+      "gender": "male",
+      "age": "adult (senator, middle-aged or older; has a daughter)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Senator Verdow: warm, jovial, quick to laugh, internationally minded; the senator Gladias trusts. Gives long reflective, philosophical speeches (law in ch25, society and the future in ch32)."
+    },
+    {
+      "name": "group (countdown chant)",
+      "letter": "N",
+      "gender": "unknown",
+      "age": "mixed (teens and adults)",
+      "kind": "crowd",
+      "origin": "Dzego and Veridia",
+      "voice_notes": "Gladias, Seila, Zei, Bai, Verdow, Den and Mu chanting the last ten ticks of a Dzegoban countdown together in a mock announcer voice; one N-coded line."
+    }
+  ],
+  "letters": {
+    "G": "Gladias",
+    "S": "Seila",
+    "E": "Evelor",
+    "Z": "Zei",
+    "D": "Den",
+    "M": "Mu",
+    "B": "Bai",
+    "V": "Verdow"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [
+    {
+      "id": "27:114",
+      "run": 0,
+      "speaker": "group (countdown chant)"
+    }
+  ],
+  "notes": "No lettered exceptions. S is Seila throughout (the judge Sewlert from ch26 does not appear); E is Evelor throughout (Emerald is only mentioned). 27:31 is Seila whispering through her neck band. 27:55 is Evelor reading a poll question aloud. 27:108 (Zei) and 27:110 (Bai) are Dzegoban countdown phrases in a mock robotic announcer voice. NARRATOR EXCEPTION: 27:114 is an N-coded line in quote marks - the whole group around the table chanting a Dzegoban countdown in unison; listed under narrator_exceptions as 'group (countdown chant)' (drop it if you prefer the narrator to read it). 27:143 is N-coded on-screen text: the written executive summary from the first forecaster bot (an AI, written only, not spoken) - left to the narrator, but you may want a synthetic 'forecaster bot' voice for its six runs. All lettered attributions confident."
+}

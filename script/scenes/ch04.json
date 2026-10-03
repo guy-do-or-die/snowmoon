@@ -1,0 +1,47 @@
+{
+  "chapter": 4,
+  "scenes": [
+    {
+      "start": "4:1",
+      "setting": "outdoor courtyard cafe, Fin and Zei at a table",
+      "ambience": "restaurant"
+    },
+    {
+      "start": "4:55",
+      "setting": "tree-lined path climbing toward the mountain pyramid",
+      "ambience": "forest_path"
+    },
+    {
+      "start": "4:67",
+      "setting": "pyramid tunnels and the Minpentai waiting room (Mu, Bai)",
+      "ambience": null
+    },
+    {
+      "start": "4:87",
+      "setting": "giant arena room, over a thousand spectators, pre-game",
+      "ambience": "stadium_crowd"
+    },
+    {
+      "start": "4:102",
+      "setting": "the quarter-final game in the arena",
+      "ambience": "stadium_crowd"
+    },
+    {
+      "start": "4:157",
+      "setting": "waiting room after the game, Mu explains the rule",
+      "ambience": null
+    }
+  ],
+  "spots": [
+    {
+      "id": "4:90",
+      "sound": "drones_flyby",
+      "why": "Drones about the size of a hand device buzzed as they flew around Zei"
+    },
+    {
+      "id": "4:155",
+      "sound": "crowd_cheer",
+      "why": "The audience cheered"
+    }
+  ]
+}

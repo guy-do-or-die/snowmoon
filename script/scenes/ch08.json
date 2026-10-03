@@ -1,0 +1,52 @@
+{
+  "chapter": 8,
+  "scenes": [
+    {
+      "start": "8:1",
+      "setting": "walking along the street to the autobus stop",
+      "ambience": "city_street"
+    },
+    {
+      "start": "8:20",
+      "setting": "on the autobus, listening to the Sylka-Ephelion debate",
+      "ambience": "vehicle_interior"
+    },
+    {
+      "start": "8:42",
+      "setting": "off the autobus, tree-covered path to the parliament",
+      "ambience": null
+    },
+    {
+      "start": "8:46",
+      "setting": "parliament committee hearing room",
+      "ambience": null
+    },
+    {
+      "start": "8:112",
+      "setting": "leaving parliament, walking to Vil's house",
+      "ambience": "city_street"
+    },
+    {
+      "start": "8:123",
+      "setting": "Vil's house, comforting Lily, food arrives",
+      "ambience": "home_interior"
+    },
+    {
+      "start": "8:139",
+      "setting": "call with Mov",
+      "ambience": null
+    },
+    {
+      "start": "8:155",
+      "setting": "evening call with Seila",
+      "ambience": null
+    }
+  ],
+  "spots": [
+    {
+      "id": "8:135",
+      "sound": "door_open",
+      "why": "the doorbell buzzed. Vil ... walked toward the door, and opened it"
+    }
+  ]
+}

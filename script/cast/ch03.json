@@ -1,0 +1,85 @@
+{
+  "chapter": 3,
+  "characters": [
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia chapters. Thoughtful, calm, gentle, philosophical, with an occasional mischievous streak; a little awkward under pressure. Acolyte of the Order of Steering (accepted as a Keeper in ch. 8). Husband of Seila, father of Zven and Lily. Many of his lines are subvocalised whispers through a neck band."
+    },
+    {
+      "name": "Mov",
+      "letter": "M",
+      "gender": "male",
+      "age": "adult (established Order member; Gladias's peer or slightly senior)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's close friend and mentor in the Order of Steering (a Keeper, selected as a Herald in ch. 8). Wry, sarcastic, sharp, security-paranoid but warm underneath; talks fast and knowledgeably. Partly heard by call/earpiece."
+    },
+    {
+      "name": "first man on bench",
+      "letter": "B",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Passer-by chatting on a bench outside Greater Plum Harbor; has been inside, relaxed and worldly."
+    },
+    {
+      "name": "second man on bench",
+      "letter": "V",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "His companion on the bench; never been inside Greater Plum Harbor, sympathetic to it, exasperated and a bit ranting."
+    },
+    {
+      "name": "Emerald",
+      "letter": "E",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "ai",
+      "origin": "Veridia",
+      "voice_notes": "Gladias's local AI assistant running on his hand device, heard in his ear; neutral, concise, informative."
+    },
+    {
+      "name": "Delwart",
+      "letter": "D",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "The mysterious anonymous messenger from ch. 1. Smooth, self-assured, persuasive, slightly showy and quietly menacing; an ideologue who wants the Steering system abolished and recruits Keepers."
+    },
+    {
+      "name": "entrance gate machine",
+      "letter": "M",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "device",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Short synthetic confirmation voice from a credential-checking gate; robotic but approving. Ch. 1 is the concert gate, ch. 3 the Greater Plum Harbor gate; same type of voice."
+    }
+  ],
+  "letters": {
+    "G": "Gladias",
+    "M": "Mov",
+    "B": "first man on bench",
+    "V": "second man on bench",
+    "E": "Emerald",
+    "D": "Delwart"
+  },
+  "exceptions": [
+    {
+      "id": "3:76",
+      "letter": "M",
+      "speaker": "entrance gate machine"
+    }
+  ],
+  "narrator_exceptions": [],
+  "notes": "M is Mov throughout the tunnel scene; the only other M is the Greater Plum Harbor gate machine at 3:76. B and V are the two men on the bench (the letters do not obviously match their labels; attribution follows the speech tags and turn-taking: B = 3:62, 3:64, 3:72; V = 3:63, 3:66, 3:71). E (3:69) is Emerald, Gladias's AI; 3:67 is Gladias's silent subvocalised question to it. The propaganda poster at 3:7 is narrator-read written text signed by Lord Ephelion, who speaks in ch. 8. 3:9 is Gladias's thought inside narration."
+}

@@ -1,0 +1,67 @@
+{
+  "chapter": 12,
+  "scenes": [
+    {
+      "start": "12:1",
+      "setting": "train pulling into Sadzu Du station",
+      "ambience": "vehicle_interior"
+    },
+    {
+      "start": "12:14",
+      "setting": "station platform with the priests, black car through Sadzu Du, hotel check-in",
+      "ambience": null
+    },
+    {
+      "start": "12:45",
+      "setting": "hotel room, wake-up alarm",
+      "ambience": null
+    },
+    {
+      "start": "12:51",
+      "setting": "black car to the pyramid, reading the hash function chapter; explosion site",
+      "ambience": "vehicle_interior"
+    },
+    {
+      "start": "12:69",
+      "setting": "grand Minpentai door and orientation hall inside the pyramid",
+      "ambience": null
+    },
+    {
+      "start": "12:100",
+      "setting": "three days later: hotel room call with Bai, car to the pyramid, waiting room with Su and Bo",
+      "ambience": null
+    },
+    {
+      "start": "12:142",
+      "setting": "national arena, five to ten thousand spectators, hex-grid game",
+      "ambience": "stadium_crowd"
+    }
+  ],
+  "spots": [
+    {
+      "id": "12:8",
+      "sound": "door_open",
+      "why": "Zei could hear the doors open"
+    },
+    {
+      "id": "12:41",
+      "sound": "watch_buzz",
+      "why": "Zei's watch buzzed, confirming his room key"
+    },
+    {
+      "id": "12:45",
+      "sound": "alarm",
+      "why": "An alarm buzzed"
+    },
+    {
+      "id": "12:72",
+      "sound": "door_open",
+      "why": "Zei tapped his watch against the green circle, and the door opened"
+    },
+    {
+      "id": "12:145",
+      "sound": "drones_flyby",
+      "why": "Drones about the size of a hand device buzzed as they flew around Zei"
+    }
+  ]
+}

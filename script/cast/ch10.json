@@ -1,0 +1,326 @@
+{
+  "chapter": 10,
+  "characters": [
+    {
+      "name": "Jahn",
+      "letter": "J",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Freetown, United Cities",
+      "voice_notes": "Researcher at the Freetown Economics Institute and Seila's friend. Casual, curious, a little out of the loop; shaken in chapter 15."
+    },
+    {
+      "name": "Utaku",
+      "letter": "U",
+      "gender": "female",
+      "age": "young adult (doctoral student)",
+      "kind": "human",
+      "origin": "Belpaki (studying in Freetown, United Cities)",
+      "voice_notes": "Well-informed, matter-of-fact doctoral student at the Institute; explains politics briskly."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, mother, economics-and-culture blogger. Warm, playful, quick; fond of Dzego; protective of the children."
+    },
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia chapters; newly made Keeper in the Order. Thoughtful, earnest, slightly awkward, argues carefully. Inside Keeper booths he is addressed by a number (Four, Six or Two depending on the circle)."
+    },
+    {
+      "name": "Twenty",
+      "letter": "T",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Third-year Keeper in the cultural-values circle; welcoming, cheerful, asks for studies. Narration uses 'he'. Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "third-year Keeper S (cultural values circle)",
+      "letter": "S",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Unnamed 'other third-year' who chairs the cultural-values discussion; diplomatic, process-minded facilitator, gently teasing. Number not given (starts with S). Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "One (cultural values circle)",
+      "letter": "O",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "First-year Keeper numbered One in the cultural-values circle; pedantic, precise, defends Veridia's nudge-by-tax system. A different circle (and so probably a different person) from the One in chapter 13. Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "Eleven",
+      "letter": "E",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Second-year Keeper in the cultural-values circle; skeptical, traditional, pushes back on Gladias about violent content. Narration uses 'he' for the late arrival. Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "Personal reminders",
+      "letter": "P",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "written",
+      "origin": "Gladias's watch",
+      "voice_notes": "Text of a reminder notification on Gladias's watch; neutral notification tone if voiced."
+    },
+    {
+      "name": "Eighteen",
+      "letter": "E",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Keeper in the hardware-openness circle; security-savvy (sweeps the booth for bugs), hawkish about the Arctic threat, blunt and confident. Narration uses 'he'. Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "Nine",
+      "letter": "N",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Keeper in the hardware-openness circle; calm, dismissive of the Arctic threat, argues that Veridia should stay out of military tech. His speech is printed inside narrator (N) runs in quotation marks. Narration uses 'he'. Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "Thirteen",
+      "letter": "T",
+      "gender": "female",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Keeper who chairs the hardware-openness circle; brisk, businesslike, lightly teasing. States in chapter 13 that she is female. Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "Zero",
+      "letter": "Z",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Keeper in the hardware-openness circle who drafts the amendment exempting military hardware; argumentative, relativist, soft on the Arctics. Narration uses 'he'. Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "third-year Keeper S (hardware openness circle)",
+      "letter": "S",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Unnamed third-year in the hardware-openness circle who speaks once, confidently arguing that more defense preserves freedom. Number not given (starts with S). Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen (same age as Zei)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Sharp, competitive, teasing; orphan who had to fend for herself, guarded but warming up. Zei's Minpentai rival turned sparring partner."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen (final year of high school, about 17-18)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Bright, intense, earnest; maths-minded Minpentai prodigy now studying cryptography; protagonist of the Dzego chapters. Proud but self-aware, eager to please his mentors."
+    },
+    {
+      "name": "Den",
+      "letter": "D",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Dzego",
+      "voice_notes": "Cloaked Minpentai priest, High Council member of the Kungaupei (secret defense society). Soft-spoken, measured, mentor-like; lectures on cryptography and assumes compliance."
+    },
+    {
+      "name": "Mu",
+      "letter": "M",
+      "gender": "female",
+      "age": "older adult (described as an older woman)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Older woman, Minpentai priest and Zei's long-time overseer at the Pafogai Du games. Warm but pointed, speaks with gravitas."
+    }
+  ],
+  "letters": {
+    "J": "Jahn",
+    "U": "Utaku",
+    "S": "Seila",
+    "G": "Gladias",
+    "T": "Thirteen",
+    "O": "One (cultural values circle)",
+    "E": "Eighteen",
+    "P": "Personal reminders",
+    "Z": "Zei",
+    "B": "Bai",
+    "D": "Den",
+    "M": "Mu"
+  },
+  "exceptions": [
+    {
+      "id": "10:54",
+      "letter": "T",
+      "speaker": "Twenty"
+    },
+    {
+      "id": "10:56",
+      "letter": "T",
+      "speaker": "Twenty"
+    },
+    {
+      "id": "10:83",
+      "letter": "T",
+      "speaker": "Twenty"
+    },
+    {
+      "id": "10:60",
+      "letter": "S",
+      "speaker": "third-year Keeper S (cultural values circle)"
+    },
+    {
+      "id": "10:62",
+      "letter": "S",
+      "speaker": "third-year Keeper S (cultural values circle)"
+    },
+    {
+      "id": "10:63",
+      "letter": "S",
+      "speaker": "third-year Keeper S (cultural values circle)"
+    },
+    {
+      "id": "10:75",
+      "letter": "S",
+      "speaker": "third-year Keeper S (cultural values circle)"
+    },
+    {
+      "id": "10:86",
+      "letter": "S",
+      "speaker": "third-year Keeper S (cultural values circle)"
+    },
+    {
+      "id": "10:87",
+      "letter": "S",
+      "speaker": "third-year Keeper S (cultural values circle)"
+    },
+    {
+      "id": "10:89",
+      "letter": "S",
+      "speaker": "third-year Keeper S (cultural values circle)"
+    },
+    {
+      "id": "10:91",
+      "letter": "S",
+      "speaker": "third-year Keeper S (cultural values circle)"
+    },
+    {
+      "id": "10:64",
+      "letter": "E",
+      "speaker": "Eleven"
+    },
+    {
+      "id": "10:67",
+      "letter": "E",
+      "speaker": "Eleven"
+    },
+    {
+      "id": "10:72",
+      "letter": "E",
+      "speaker": "Eleven"
+    },
+    {
+      "id": "10:74",
+      "letter": "E",
+      "speaker": "Eleven"
+    },
+    {
+      "id": "10:88",
+      "letter": "E",
+      "speaker": "Eleven"
+    },
+    {
+      "id": "10:136",
+      "letter": "Z",
+      "speaker": "Zero"
+    },
+    {
+      "id": "10:138",
+      "letter": "Z",
+      "speaker": "Zero"
+    },
+    {
+      "id": "10:139",
+      "letter": "Z",
+      "speaker": "Zero"
+    },
+    {
+      "id": "10:150",
+      "letter": "Z",
+      "speaker": "Zero"
+    },
+    {
+      "id": "10:151",
+      "letter": "Z",
+      "speaker": "Zero"
+    },
+    {
+      "id": "10:153",
+      "letter": "Z",
+      "speaker": "Zero"
+    },
+    {
+      "id": "10:145",
+      "letter": "S",
+      "speaker": "third-year Keeper S (hardware openness circle)"
+    }
+  ],
+  "narrator_exceptions": [
+    {
+      "id": "10:107",
+      "run": 0,
+      "speaker": "Nine"
+    },
+    {
+      "id": "10:121",
+      "run": 0,
+      "speaker": "Nine"
+    },
+    {
+      "id": "10:123",
+      "run": 0,
+      "speaker": "Nine"
+    },
+    {
+      "id": "10:141",
+      "run": 0,
+      "speaker": "Nine"
+    },
+    {
+      "id": "10:143",
+      "run": 0,
+      "speaker": "Nine"
+    }
+  ],
+  "notes": "Three scenes share letters. (1) First Keeper meeting 10:54-10:91 (cultural values circle, Gladias is 'Four'): T=Twenty, S=an unnamed third-year (not Seila), O=One, E=Eleven. (2) Second Keeper meeting 10:104-10:155 (hardware openness circle, Gladias is 'Six'): E=Eighteen, Z=Zero (not Zei), Nine speaks inside N runs, T=the Keeper who chairs, S at 10:145=an unnamed third-year. (3) Dzego scenes from 10:158: Z=Zei, M=Mu. Uncertain: the T chair of the second meeting (10:130, 10:132, 10:134, 10:155) is never numbered in this chapter; I identify it as Thirteen because Thirteen chairs the same circle in chapter 13 and is the only T-numbered member, although the narration here says the Keeper 'cleared his throat' while Thirteen later says she is female. Uncertain: E at 10:64, 10:67, 10:72, 10:74 is described only as 'a second year who had not yet spoken up'; the circle has two second-years and I assume all E lines are Eleven (named at 10:88). Nine's lines: 10:107, 10:123 and 10:143 are entirely speech; 10:121 and 10:141 mix narration tags ('he said', 'Nine interjected') with quoted speech in one N run, so split at the quotation marks. In 10:150 both Z runs are Zero. 10:98 P is the text of a watch reminder."
+}

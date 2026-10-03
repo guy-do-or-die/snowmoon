@@ -1,0 +1,42 @@
+{
+  "chapter": 3,
+  "scenes": [
+    {
+      "start": "3:1",
+      "setting": "sidewalk of small shops, down into the pedestrian tunnel to the Ephelion poster",
+      "ambience": "city_street"
+    },
+    {
+      "start": "3:13",
+      "setting": "pedestrian tunnel, conversation with Mov",
+      "ambience": null
+    },
+    {
+      "start": "3:37",
+      "setting": "tree-lined path out of the tunnel into Meldan's commercial district; GPH wall and billboard",
+      "ambience": "city_street"
+    },
+    {
+      "start": "3:75",
+      "setting": "Greater Plum Harbor gate, its uniform streets and crowded tunnel",
+      "ambience": "city_street"
+    },
+    {
+      "start": "3:88",
+      "setting": "hidden courtyard, curtained booth, water and salad",
+      "ambience": "restaurant"
+    },
+    {
+      "start": "3:94",
+      "setting": "curtained booth, meeting with Delwart",
+      "ambience": "restaurant"
+    }
+  ],
+  "spots": [
+    {
+      "id": "3:81",
+      "sound": "watch_buzz",
+      "why": "Just after he passed through the crowd, his watch buzzed"
+    }
+  ]
+}

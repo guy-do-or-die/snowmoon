@@ -1,0 +1,60 @@
+{
+  "chapter": 18,
+  "characters": [
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia thread; a Keeper in the Order of Steering, husband of Seila, father of Zven and Lily. Thoughtful, earnest, a bit naive and philosophical; calm, curious, humble when wrong."
+    },
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen, about 18 (Zei's peer)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Minpentai player (second place in Pafogai Du), formerly Zei's rival, now ally. Confident, sharp, strategic, socially astute; orphaned and self-made; shows a gentler reflective side in ch24."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen, 18",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego thread; national Minpentai champion and gifted cryptographer. Curious, quick, precise; explains technical things fluently and matter-of-factly; friendly host to Gladias. Occasionally speaks Dzegoban."
+    },
+    {
+      "name": "man (shopkeeper)",
+      "letter": "M",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Shopkeeper doing a high-security parcel swap; answers a foreigner in two terse, hurried phrases."
+    },
+    {
+      "name": "Fin",
+      "letter": "F",
+      "gender": "male",
+      "age": "teen / young adult (Zei's close friend, similar age)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Zei's best friend, active in the Bansunpei (the language-reform body). Passionate, idealistic, builds to an excited rallying speech in ch18; patient, encouraging language tutor in ch23."
+    }
+  ],
+  "letters": {
+    "G": "Gladias",
+    "B": "Bai",
+    "Z": "Zei",
+    "M": "man (shopkeeper)",
+    "F": "Fin"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No exceptions. Bai is female (narration uses 'she'). 18:26 is Zei speaking Dzegoban. M (18:69, two runs) is an unnamed man from a shop. 18:99 is Bai translating the poem shown on the device at 18:92 (the device text itself is N-coded). All attributions confident."
+}

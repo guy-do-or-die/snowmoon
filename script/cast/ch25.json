@@ -1,0 +1,40 @@
+{
+  "chapter": 25,
+  "characters": [
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia thread; a Keeper in the Order of Steering, husband of Seila, father of Zven and Lily. Thoughtful, earnest, calm and curious; in these chapters more confident and argumentative (pitches the court case to the judges), tender with his family. Occasionally speaks slow, careful Dzegoban."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen, 18",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego thread; national Minpentai champion and gifted cryptographer, now supervising drone combat for the Kungaupei and Veridia. Quick, precise, fluent technical explainer; playful with friends; tense, despairing and then elated during the battles (ch26, ch29-30). Occasionally speaks Dzegoban."
+    },
+    {
+      "name": "Verdow",
+      "letter": "V",
+      "gender": "male",
+      "age": "adult (senator, middle-aged or older; has a daughter)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Senator Verdow: warm, jovial, quick to laugh, internationally minded; the senator Gladias trusts. Gives long reflective, philosophical speeches (law in ch25, society and the future in ch32)."
+    }
+  ],
+  "letters": {
+    "G": "Gladias",
+    "Z": "Zei",
+    "V": "Verdow"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No exceptions: G is Gladias, Z is Zei, V is Senator Verdow throughout. From 25:120 Verdow is the remote party on a call with Gladias and Zei. N-coded written text left to the narrator: the binary grids Zei writes on his hand device (25:48, 25:56, 25:64) and the outgoing message header typed by Gladias (25:117). All attributions confident."
+}

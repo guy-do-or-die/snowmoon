@@ -1,0 +1,115 @@
+{
+  "chapter": 30,
+  "characters": [
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen, 18",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego thread; national Minpentai champion and gifted cryptographer, now supervising drone combat for the Kungaupei and Veridia. Quick, precise, fluent technical explainer; playful with friends; tense, despairing and then elated during the battles (ch26, ch29-30). Occasionally speaks Dzegoban."
+    },
+    {
+      "name": "Fin",
+      "letter": "F",
+      "gender": "male",
+      "age": "teen / young adult (Zei's close friend, similar age)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Zei's best friend, active in the Bansunpei (the language-reform body). Quick, upbeat, eager to help; answers an emergency call in the middle of the night."
+    },
+    {
+      "name": "Bansunpei researcher",
+      "letter": "C",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Dzego",
+      "voice_notes": "Unnamed Bansunpei AI researcher on the emergency group chat; brisk, technical, upbeat as results come in. Gender not stated."
+    },
+    {
+      "name": "second Bansunpei researcher",
+      "letter": "L",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Dzego",
+      "voice_notes": "Another unnamed Bansunpei researcher on the group chat; confident, technical, one-ups the first researcher's plan. Gender not stated."
+    },
+    {
+      "name": "Lektor",
+      "letter": "L",
+      "gender": "male",
+      "age": "adult, middle-aged",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Respected Veridian general, later head general and overall commander of the Northshore offensive. Forthright, sceptical but open-minded in ch28; loud, firm, commanding when giving orders in ch29-30."
+    },
+    {
+      "name": "Mu",
+      "letter": "M",
+      "gender": "female",
+      "age": "older adult (described earlier as an older woman)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Kungaupei member and former Minpentai tournament organiser, a mentor figure to Zei and Bai. Calm, soft-spoken, quietly brilliant improviser who stays cool in a crisis; gentle, with wry humour."
+    },
+    {
+      "name": "Gallowar",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Veridian general leading Group North; clipped, businesslike military reports, shouts orders over the command channel."
+    },
+    {
+      "name": "Telpo",
+      "letter": "T",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (presumably; army group leader)",
+      "voice_notes": "Leader of Group Center; short, clipped military reports over the command channel. Gender not stated."
+    },
+    {
+      "name": "Vakaria",
+      "letter": "V",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (presumably; army group leader)",
+      "voice_notes": "Leader of Group Naval (seaborne drones); brisk military reports, a touch of warmth when praising the Northglade locals. Gender not stated."
+    },
+    {
+      "name": "Den",
+      "letter": "D",
+      "gender": "male",
+      "age": "adult (senior figure)",
+      "kind": "human",
+      "origin": "Dzego",
+      "voice_notes": "High Council member of the Kungaupei (Dzego's shadow defence organisation), Zei's mentor and mission commander. Composed, authoritative, dry and blunt; leads Group South and is killed in ch29 (his ch30 line is a remembered quote)."
+    }
+  ],
+  "letters": {
+    "F": "Fin",
+    "C": "Bansunpei researcher",
+    "L": "second Bansunpei researcher",
+    "Z": "Zei",
+    "M": "Mu",
+    "G": "Gallowar",
+    "T": "Telpo",
+    "V": "Vakaria",
+    "D": "Den"
+  },
+  "exceptions": [
+    {
+      "id": "30:51",
+      "letter": "L",
+      "speaker": "Lektor"
+    }
+  ],
+  "narrator_exceptions": [],
+  "notes": "L is shared: 30:16 and 30:30 are an unnamed second Bansunpei researcher ('another researcher') in the group chat; 30:51 is General Lektor giving the order (exception). C is an unnamed Bansunpei researcher (tagged at 30:24); I treated all nine C runs as the same person - 30:14, 30:15, 30:18, 30:20 and 30:42 have no speech tag, so that is an assumption (medium confidence; about ten people are in the chat). G (30:47) is Gallowar reporting for Group North, not Gladias; M at 30:49 is Mu reporting for Group South, which she took over after Den's death; V (30:50) is Vakaria; T (30:48) is Telpo. D at 30:58 is a line of Den's that Zei remembers (flashback quote; Den is dead by now). Most speech in this chapter is over the chat/command channel (remote voices). N-coded written text left to the narrator: 30:6, 30:33 and 30:69 are written first-person messages from Deluin on Zei's watch (the first two include long hexadecimal address/key lists; 30:69 ends with a Dzegoban phrase) - you may want Deluin's voice for the prose runs."
+}

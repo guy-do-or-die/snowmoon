@@ -1,0 +1,42 @@
+{
+ "chapter": 22,
+ "scenes": [
+  {
+   "start": "22:1",
+   "setting": "taxi ride through Freetown",
+   "ambience": "vehicle_interior"
+  },
+  {
+   "start": "22:34",
+   "setting": "restaurant at the Freetown Economics Institute, with Utaku",
+   "ambience": "restaurant"
+  },
+  {
+   "start": "22:70",
+   "setting": "Jahn working alone in the restaurant area",
+   "ambience": "restaurant"
+  },
+  {
+   "start": "22:72",
+   "setting": "calling booth, Zei's call and the remote view of the Redshire kill chain",
+   "ambience": null
+  }
+ ],
+ "spots": [
+  {
+   "id": "22:71",
+   "sound": "watch_buzz",
+   "why": "Jahn's watch buzzed. It was Zei"
+  },
+  {
+   "id": "22:82",
+   "sound": "data_transfer",
+   "why": "Jahn's computer buzzed, and he saw a file download"
+  },
+  {
+   "id": "22:138",
+   "sound": "data_transfer",
+   "why": "the download icon turned on again on Jahn's computer"
+  }
+ ]
+}

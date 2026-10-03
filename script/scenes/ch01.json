@@ -1,0 +1,72 @@
+{
+  "chapter": 1,
+  "scenes": [
+    {
+      "start": "1:1",
+      "setting": "wooded foot path through the Kalimar district, Meldan",
+      "ambience": "forest_path"
+    },
+    {
+      "start": "1:12",
+      "setting": "sky bridge over a busy road, then the street beside the soundproof barrier (aesthetics vote)",
+      "ambience": "city_street"
+    },
+    {
+      "start": "1:50",
+      "setting": "concert entrance gate, walking in among the attendees",
+      "ambience": null
+    },
+    {
+      "start": "1:57",
+      "setting": "outdoor metal concert, Dreadknot on stage",
+      "ambience": "concert_crowd"
+    },
+    {
+      "start": "1:88",
+      "setting": "concert crowd, Gladias exposed and fleeing to the exit",
+      "ambience": "concert_crowd"
+    },
+    {
+      "start": "1:102",
+      "setting": "nearly empty autobus, reading the ads",
+      "ambience": "vehicle_interior"
+    },
+    {
+      "start": "1:113",
+      "setting": "family home, ordering dinner and eating with the kids",
+      "ambience": "home_interior"
+    }
+  ],
+  "spots": [
+    {
+      "id": "1:5",
+      "sound": "drones_flyby",
+      "why": "a small drone flew over his head"
+    },
+    {
+      "id": "1:18",
+      "sound": "watch_buzz",
+      "why": "his hand device buzzed"
+    },
+    {
+      "id": "1:30",
+      "sound": "data_transfer",
+      "why": "downloaded both a close-up image and the tax percentages"
+    },
+    {
+      "id": "1:84",
+      "sound": "crowd_cheer",
+      "why": "The first song finished, and he heard them cheering"
+    },
+    {
+      "id": "1:113",
+      "sound": "door_open",
+      "why": "he arrived at his house. He opened the door"
+    },
+    {
+      "id": "1:122",
+      "sound": "footsteps_stairs",
+      "why": "loud footsteps coming down the stairs"
+    }
+  ]
+}

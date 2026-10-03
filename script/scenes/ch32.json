@@ -1,0 +1,11 @@
+{
+  "chapter": 32,
+  "scenes": [
+    {"start": "32:1", "setting": "walk through Kalimar to parliament, cameras coming down", "ambience": "forest_path"},
+    {"start": "32:10", "setting": "Verdow's office in parliament, with Zei", "ambience": null},
+    {"start": "32:105", "setting": "parliament rooftop, view over Meldan", "ambience": null}
+  ],
+  "spots": [
+    {"id": "32:10", "sound": "door_open", "why": "Gladias tapped his watch against the green circle, and the doors opened"}
+  ]
+}

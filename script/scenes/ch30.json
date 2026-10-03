@@ -1,0 +1,13 @@
+{
+  "chapter": 30,
+  "scenes": [
+    {"start": "30:1", "setting": "command post before dawn, Deluin's simulator access and the pattern search", "ambience": "war_room"},
+    {"start": "30:46", "setting": "command post at sunrise, the DOG attack and the breakthrough", "ambience": "war_room"}
+  ],
+  "spots": [
+    {"id": "30:4", "sound": "watch_buzz", "why": "Zei's watch buzzed. It was Deluin"},
+    {"id": "30:29", "sound": "watch_buzz", "why": "Zei's watch buzzed"},
+    {"id": "30:60", "sound": "watch_buzz", "why": "Zei's watch buzzed again"},
+    {"id": "30:64", "sound": "watch_buzz", "why": "Zei's watch buzzed again. He had received the second message"}
+  ]
+}

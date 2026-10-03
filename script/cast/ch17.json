@@ -1,0 +1,90 @@
+{
+  "chapter": 17,
+  "characters": [
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia thread; a Keeper in the Order of Steering, husband of Seila, father of Zven and Lily. Thoughtful, earnest, a bit naive and philosophical; calm, curious, humble when wrong."
+    },
+    {
+      "name": "Verdow",
+      "letter": "V",
+      "gender": "male",
+      "age": "adult (senator, likely middle-aged or older)",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Senator Verdow: warm, jovial, laughs easily, internationally minded; the one senator Gladias trusts. Enthusiastic and encouraging."
+    },
+    {
+      "name": "parliament office robot",
+      "letter": "R",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "robot",
+      "origin": "Veridia",
+      "voice_notes": "Drinks-service robot in Verdow's office; speaks one short Dzegoban phrase (Verdow set it to Dzegoban). Flat, polite synthetic voice."
+    },
+    {
+      "name": "Belgor",
+      "letter": "B",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Graph Funding steward; friendly, enthusiastic technical explainer, speaks in long clear lecture-like passages, candid about tradeoffs."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult, about Gladias's age (late 30s)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, blogger on economics and culture, mother of Zven and Lily. Sharp, quick, warm but direct; in ch21 and ch23 she is furious and shouts (lines in capitals), in ch20 a determined investigator who wins people's trust."
+    },
+    {
+      "name": "Zven",
+      "letter": "Z",
+      "gender": "male",
+      "age": "child, about 10-12",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias and Seila's young son; energetic, excitable, proud of his Helisport and physics; calls Gladias 'Dad'."
+    },
+    {
+      "name": "Hreda",
+      "letter": "H",
+      "gender": "female",
+      "age": "teen (school age, exact age not given)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Daughter of co-family Vil and Daia; a math prodigy, bright, proud and precise; frightened but brave in her written messages from Northglade."
+    },
+    {
+      "name": "Febric",
+      "letter": "F",
+      "gender": "male",
+      "age": "teen (older teenager)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Son of co-family Vil and Daia; computer-science kid, calm and matter-of-fact, more laconic than Hreda."
+    }
+  ],
+  "letters": {
+    "G": "Gladias",
+    "V": "Verdow",
+    "R": "parliament office robot",
+    "B": "Belgor",
+    "S": "Seila",
+    "Z": "Zven",
+    "H": "Hreda",
+    "F": "Febric"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No exceptions: every letter has a single speaker in this chapter. NOTE Z here is Zven (Gladias's young son), not Zei - Zei is only mentioned. V is Senator Verdow (Vil is only mentioned). B is Belgor (Bai is only mentioned). 17:17 (robot) is spoken in Dzegoban. Device/ballot text at 17:7 and 17:119 is N-coded screen text, not speech. All attributions confident."
+}

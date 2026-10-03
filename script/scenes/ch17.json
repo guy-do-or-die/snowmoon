@@ -1,0 +1,15 @@
+{
+  "chapter": 17,
+  "scenes": [
+    {"start": "17:1", "setting": "tree-lined path to the Veridian parliament building", "ambience": "forest_path"},
+    {"start": "17:9", "setting": "Senator Verdow's office inside parliament", "ambience": null},
+    {"start": "17:46", "setting": "Verdow's office, Belgor of Graph Funding joins", "ambience": null},
+    {"start": "17:90", "setting": "Gladias's home, family dinner and the Keeper vote", "ambience": "home_interior"}
+  ],
+  "spots": [
+    {"id": "17:9", "sound": "door_open", "why": "The door opened. Gladias walked in"},
+    {"id": "17:46", "sound": "door_open", "why": "the door opened, and another man ... walked in"},
+    {"id": "17:90", "sound": "door_open", "why": "Gladias opened the door to his house, and entered"},
+    {"id": "17:116", "sound": "watch_buzz", "why": "Gladias's hand device buzzed"}
+  ]
+}

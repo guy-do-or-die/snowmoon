@@ -1,0 +1,111 @@
+{
+  "chapter": 29,
+  "characters": [
+    {
+      "name": "Mu",
+      "letter": "M",
+      "gender": "female",
+      "age": "older adult (described earlier as an older woman)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Kungaupei member and former Minpentai tournament organiser, a mentor figure to Zei and Bai. Calm, soft-spoken, quietly brilliant improviser who stays cool in a crisis; gentle, with wry humour."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen, 18",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego thread; national Minpentai champion and gifted cryptographer, now supervising drone combat for the Kungaupei and Veridia. Quick, precise, fluent technical explainer; playful with friends; tense, despairing and then elated during the battles (ch26, ch29-30). Occasionally speaks Dzegoban."
+    },
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen, about 18 (Zei's peer)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Minpentai player, formerly Zei's rival, now his close and affectionate ally. Confident, socially astute, a persuasive negotiator (ch28); steady and supportive under pressure (ch29); teasing humour."
+    },
+    {
+      "name": "Lektor",
+      "letter": "L",
+      "gender": "male",
+      "age": "adult, middle-aged",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Respected Veridian general, later head general and overall commander of the Northshore offensive. Forthright, sceptical but open-minded in ch28; loud, firm, commanding when giving orders in ch29-30."
+    },
+    {
+      "name": "Gallowar",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Veridian general leading Group North; clipped, businesslike military reports, shouts orders over the command channel."
+    },
+    {
+      "name": "Telpo",
+      "letter": "T",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (presumably; army group leader)",
+      "voice_notes": "Leader of Group Center; short, clipped military reports over the command channel. Gender not stated."
+    },
+    {
+      "name": "Den",
+      "letter": "D",
+      "gender": "male",
+      "age": "adult (senior figure)",
+      "kind": "human",
+      "origin": "Dzego",
+      "voice_notes": "High Council member of the Kungaupei (Dzego's shadow defence organisation), Zei's mentor and mission commander. Composed, authoritative, dry and blunt; leads Group South and is killed in ch29 (his ch30 line is a remembered quote)."
+    },
+    {
+      "name": "Vakaria",
+      "letter": "V",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (presumably; army group leader)",
+      "voice_notes": "Leader of Group Naval (seaborne drones); brisk military reports, a touch of warmth when praising the Northglade locals. Gender not stated."
+    },
+    {
+      "name": "Emerald",
+      "letter": "E",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "ai",
+      "origin": "Veridia (AI assistant used by both Veridians and Dzegojans)",
+      "voice_notes": "The personal AI assistant running on everyone's devices; terse, neutral, analytical status reports in clipped sentences."
+    }
+  ],
+  "letters": {
+    "M": "Mu",
+    "Z": "Zei",
+    "B": "Bai",
+    "L": "Lektor",
+    "D": "Den",
+    "T": "Telpo",
+    "G": "Gallowar",
+    "V": "Vakaria",
+    "E": "Emerald"
+  },
+  "exceptions": [
+    {
+      "id": "29:24",
+      "letter": "D",
+      "speaker": "Gallowar"
+    },
+    {
+      "id": "29:28",
+      "letter": "G",
+      "speaker": "Den"
+    }
+  ],
+  "narrator_exceptions": [],
+  "notes": "IMPORTANT - the book's colour codes look swapped at the roll call: 29:24 is coded D but is the answer to Lektor's 'Gallowar?' and describes Group North (Gallowar's group, confirmed at 29:84 and 30:84), so the speaker is Gallowar; 29:28 is coded G but answers 'And you, Den?' and describes Group South (Den is named commander of Group South at 29:121), so the speaker is Den. Both are listed as exceptions; each letter has only one other line (29:98 D = Den, 29:65 G = Gallowar), so the defaults are Den for D and Gallowar for G. Gladias does not speak in this chapter. V is Vakaria (leader of Group Naval), not Verdow. E is Emerald (the AI assistant). T is Telpo. From 29:65 on, Gallowar, Telpo, Lektor, Den and Bai are heard over the command channel/chat (remote voices). 29:98 is Den shouting in Dzegoban. N-coded written text left to the narrator: 29:121 (on-screen system alert about Rear base #3) and 29:129 (a written first-person message from Deluin - teen male from Redshire, Zei's friend; he speaks aloud in ch31 as letter D - you may want Deluin's voice for its five runs). Gender of Telpo and Vakaria is not stated."
+}

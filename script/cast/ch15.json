@@ -1,0 +1,189 @@
+{
+  "chapter": 15,
+  "characters": [
+    {
+      "name": "Jahn",
+      "letter": "J",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Freetown, United Cities",
+      "voice_notes": "Researcher at the Freetown Economics Institute and Seila's friend. Casual, curious, a little out of the loop; shaken in chapter 15."
+    },
+    {
+      "name": "Utaku",
+      "letter": "U",
+      "gender": "female",
+      "age": "young adult (doctoral student)",
+      "kind": "human",
+      "origin": "Belpaki (studying in Freetown, United Cities)",
+      "voice_notes": "Well-informed, matter-of-fact doctoral student at the Institute; explains politics briskly."
+    },
+    {
+      "name": "news reporter",
+      "letter": "N",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "announcer",
+      "origin": "unknown (special broadcast seen in Freetown and Meldan)",
+      "voice_notes": "Broadcast reporter relaying the invasion of Redshire; urgent, grave news-bulletin delivery. The lines are marked as narrator quote runs."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, mother, economics-and-culture blogger. Warm, playful, quick; fond of Dzego; protective of the children."
+    },
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia chapters; newly made Keeper in the Order. Thoughtful, earnest, slightly awkward, argues carefully. Inside Keeper booths he is addressed by a number (Four, Six or Two depending on the circle)."
+    },
+    {
+      "name": "Mov",
+      "letter": "M",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's friend and fellow Keeper who shadows Delwart for him. Dry, wry, security-minded, speaks in confident clipped statements. Usually heard over a call."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen (final year of high school, about 17-18)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Bright, intense, earnest; maths-minded Minpentai prodigy now studying cryptography; protagonist of the Dzego chapters. Proud but self-aware, eager to please his mentors."
+    },
+    {
+      "name": "Deluin",
+      "letter": "D",
+      "gender": "male",
+      "age": "teen (older teen)",
+      "kind": "human",
+      "origin": "Redshire, United Cities",
+      "voice_notes": "Foreign contestant at the Minpentai nationals; friendly, confident, witty, a little lecturing; becomes Zei's friend. In chapter 15 he is only heard through written messages from occupied Redshire."
+    },
+    {
+      "name": "Su",
+      "letter": "S",
+      "gender": "female",
+      "age": "older adult (an older woman about the same age as Mu)",
+      "kind": "human",
+      "origin": "Dzego (Sadzu Du)",
+      "voice_notes": "Lead Minpentai priest and organizer of the nationals; gracious, composed host; gentle but firm when delivering bad news in chapter 15."
+    },
+    {
+      "name": "Den",
+      "letter": "D",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Dzego",
+      "voice_notes": "Cloaked Minpentai priest, High Council member of the Kungaupei (secret defense society). Soft-spoken, measured, mentor-like; lectures on cryptography and assumes compliance."
+    }
+  ],
+  "letters": {
+    "J": "Jahn",
+    "U": "Utaku",
+    "S": "Su",
+    "G": "Gladias",
+    "M": "Mov",
+    "Z": "Zei",
+    "D": "Den"
+  },
+  "exceptions": [
+    {
+      "id": "15:22",
+      "letter": "S",
+      "speaker": "Seila"
+    },
+    {
+      "id": "15:61",
+      "letter": "D",
+      "speaker": "Deluin"
+    },
+    {
+      "id": "15:65",
+      "letter": "D",
+      "speaker": "Deluin"
+    },
+    {
+      "id": "15:72",
+      "letter": "D",
+      "speaker": "Deluin"
+    },
+    {
+      "id": "15:91",
+      "letter": "D",
+      "speaker": "Deluin"
+    },
+    {
+      "id": "15:94",
+      "letter": "D",
+      "speaker": "Deluin"
+    },
+    {
+      "id": "15:102",
+      "letter": "D",
+      "speaker": "Deluin"
+    },
+    {
+      "id": "15:146",
+      "letter": "D",
+      "speaker": "Deluin"
+    }
+  ],
+  "narrator_exceptions": [
+    {
+      "id": "15:9",
+      "run": 0,
+      "speaker": "news reporter"
+    },
+    {
+      "id": "15:9",
+      "run": 1,
+      "speaker": "news reporter"
+    },
+    {
+      "id": "15:9",
+      "run": 2,
+      "speaker": "news reporter"
+    },
+    {
+      "id": "15:11",
+      "run": 0,
+      "speaker": "news reporter"
+    },
+    {
+      "id": "15:11",
+      "run": 1,
+      "speaker": "news reporter"
+    },
+    {
+      "id": "15:13",
+      "run": 0,
+      "speaker": "news reporter"
+    },
+    {
+      "id": "15:13",
+      "run": 1,
+      "speaker": "news reporter"
+    },
+    {
+      "id": "15:13",
+      "run": 2,
+      "speaker": "news reporter"
+    }
+  ],
+  "notes": "Many lines are written messages: 15:22 (Seila to Jahn), 15:27 and 15:30 (Jahn), all Z lines 15:56-15:98 (Zei to Deluin) and all of Deluin's lines (15:61, 15:65, 15:72, 15:91, 15:94, 15:102, 15:146). D is Den for the spoken scene 15:127-15:153, Deluin for the messages. S is Su for 15:108-15:118 and Seila only at 15:22. M is Mov (call with Gladias). narrator_exceptions: the quote runs at 15:9, 15:11 and 15:13 are the broadcast reporter speaking aloud (the narration says Jahn listens to 'the reporter'); they are marked N, so I list them even though the speaker's label does not start with N - drop them if you want the narrator to read the bulletin. 15:7 is the on-screen headline and is left as narration."
+}

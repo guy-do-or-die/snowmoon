@@ -1,0 +1,80 @@
+{
+  "chapter": 5,
+  "characters": [
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen (final year of high school, about 17-18)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego chapters (full name Zei Leimin). Very bright maths/physics mind, quick and articulate, dry humour, nonchalant about danger, competitive Minpentai player; socially a bit awkward. Devoted to his mother Min."
+    },
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen (same age as Zei, final year of high school)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Zei's Minpentai rival (full name Bai Jahen). Confident, taunting, proud and well-travelled; softens into grudging respect and an obvious fondness for Zei."
+    },
+    {
+      "name": "Min",
+      "letter": "M",
+      "gender": "female",
+      "age": "adult (Zei's mother)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Zei's mother. Cheerful, grateful, easily delighted; on her first trip abroad."
+    },
+    {
+      "name": "lecture narrator",
+      "letter": "L",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "announcer",
+      "origin": "Freetown, United Cities",
+      "voice_notes": "Recorded educational lecture playing on a screen at the Freetown Economics Institute; even, explanatory documentary voice. Cut off mid-sentence."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult (age not stated; Gladias's wife, roughly his age)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Warm, upbeat, curious and encouraging; a blogger on economics and culture. Wife of Gladias, mother of Zven and Lily. Travels to Freetown and then Iptak."
+    },
+    {
+      "name": "Jahn",
+      "letter": "J",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Freetown, United Cities",
+      "voice_notes": "Seila's local friend in Freetown; friendly, informed, asks concerned questions about Dzego."
+    },
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia chapters. Thoughtful, calm, gentle, philosophical, with an occasional mischievous streak; a little awkward under pressure. Acolyte of the Order of Steering (accepted as a Keeper in ch. 8). Husband of Seila, father of Zven and Lily. Many of his lines are subvocalised whispers through a neck band."
+    }
+  ],
+  "letters": {
+    "Z": "Zei",
+    "B": "Bai",
+    "M": "Min",
+    "L": "lecture narrator",
+    "S": "Seila",
+    "J": "Jahn",
+    "G": "Gladias"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No letter is shared within the chapter. M here is Min, Zei's mother (not Mu or Mov). L (5:52-5:54) is a recorded lecture on a screen. S in 5:59 and 5:60 is tagged only as an unnamed woman and is Seila (named at 5:63). The last scene (5:99 onward) is a video call: Gladias is heard through Seila's watch."
+}

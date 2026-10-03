@@ -1,0 +1,50 @@
+{
+  "chapter": 9,
+  "characters": [
+    {
+      "name": "Fin",
+      "letter": "F",
+      "gender": "male",
+      "age": "teen (high-school age)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Zei's best friend; gentle, bookish linguistics enthusiast training with the Bansunpei. Explains things at length with quiet enthusiasm."
+    },
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen (same age as Zei)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Sharp, competitive, teasing; orphan who had to fend for herself, guarded but warming up. Zei's Minpentai rival turned sparring partner."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen (final year of high school, about 17-18)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Bright, intense, earnest; maths-minded Minpentai prodigy now studying cryptography; protagonist of the Dzego chapters. Proud but self-aware, eager to please his mentors."
+    },
+    {
+      "name": "Den",
+      "letter": "D",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Dzego",
+      "voice_notes": "Cloaked Minpentai priest, High Council member of the Kungaupei (secret defense society). Soft-spoken, measured, mentor-like; lectures on cryptography and assumes compliance."
+    }
+  ],
+  "letters": {
+    "F": "Fin",
+    "B": "Bai",
+    "Z": "Zei",
+    "D": "Den"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No ambiguous attributions. D is Den throughout (introduced as 'the priest' at 9:55). 9:114 and similar device/SVG items carry no speech."
+}

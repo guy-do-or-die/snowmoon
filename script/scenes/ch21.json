@@ -1,0 +1,10 @@
+{
+  "chapter": 21,
+  "scenes": [
+    {"start": "21:1", "setting": "Seila's house, dinner with Vil, Daia, Lily and Zven", "ambience": "home_interior"},
+    {"start": "21:41", "setting": "Seila's basement, call with Gladias about Delwart", "ambience": null}
+  ],
+  "spots": [
+    {"id": "21:46", "sound": "watch_buzz", "why": "Her watch buzzed. It was Gladias"}
+  ]
+}

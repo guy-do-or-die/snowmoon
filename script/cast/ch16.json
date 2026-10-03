@@ -1,0 +1,60 @@
+{
+  "chapter": 16,
+  "characters": [
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia chapters; newly made Keeper in the Order. Thoughtful, earnest, slightly awkward, argues carefully. Inside Keeper booths he is addressed by a number (Four, Six or Two depending on the circle)."
+    },
+    {
+      "name": "Delwart",
+      "letter": "D",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "The 'mysterious gentleman' who lobbies Gladias against interventionist rubrics; secretly working for Silverchat. Smooth, persuasive, ideological; contrite in chapter 16."
+    },
+    {
+      "name": "Mov",
+      "letter": "M",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's friend and fellow Keeper who shadows Delwart for him. Dry, wry, security-minded, speaks in confident clipped statements. Usually heard over a call."
+    },
+    {
+      "name": "Febric",
+      "letter": "F",
+      "gender": "male",
+      "age": "teen (older teen, not quite an adult)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Vil and Daia's son, calls Gladias 'uncle Glad'; cheerful, nerdy, playful, enthusiastic about game maths."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, mother, economics-and-culture blogger. Warm, playful, quick; fond of Dzego; protective of the children."
+    }
+  ],
+  "letters": {
+    "G": "Gladias",
+    "D": "Delwart",
+    "M": "Mov",
+    "F": "Febric",
+    "S": "Seila"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No ambiguous attributions. D is Delwart, M is Mov (call), F is Febric (not Fin), S is Seila (16:107 is her written security-question message; 16:111 is Gladias's written reply). 16:99 is an automated wallet notification printed as narrator text."
+}

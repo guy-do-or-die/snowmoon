@@ -1,0 +1,80 @@
+{
+  "chapter": 2,
+  "characters": [
+    {
+      "name": "Fin",
+      "letter": "F",
+      "gender": "male",
+      "age": "teen (high-school age)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Zei's best friend. Easygoing, joking, loyal and protective; bored by school, later enthusiastic about linguistics and the Bansunpei language project."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen (final year of high school, about 17-18)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego chapters (full name Zei Leimin). Very bright maths/physics mind, quick and articulate, dry humour, nonchalant about danger, competitive Minpentai player; socially a bit awkward. Devoted to his mother Min."
+    },
+    {
+      "name": "physics instructor",
+      "letter": "I",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Unnamed Decentralized University teacher. Engaging, Socratic, clear lecturer; stays calm and caring after the bombing; sober and quietly patriotic when explaining Dzego's strategy."
+    },
+    {
+      "name": "young woman at DU",
+      "letter": "W",
+      "gender": "female",
+      "age": "young adult",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Greets Fin on arrival at the hidden Decentralized University classroom; one friendly shouted line."
+    },
+    {
+      "name": "man at DU stairs",
+      "letter": "M",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Stops the group at the bottom of the stairs to redirect them to another room; brisk, low-key, matter-of-fact."
+    },
+    {
+      "name": "other student",
+      "letter": "O",
+      "gender": "male",
+      "age": "teen or young adult (DU student)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "A classmate who answers two of the instructor's questions; precise, a little studious."
+    },
+    {
+      "name": "student in smoke",
+      "letter": "S",
+      "gender": "unknown",
+      "age": "teen or young adult (DU student)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "A single short reassurance to the instructor after the explosion; shaken but okay."
+    }
+  ],
+  "letters": {
+    "F": "Fin",
+    "Z": "Zei",
+    "I": "physics instructor",
+    "W": "young woman at DU",
+    "M": "man at DU stairs",
+    "O": "other student",
+    "S": "student in smoke"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "F and Z here are Fin and Zei (not Febric and Zven as in ch. 1). No letter is shared within the chapter, so no exceptions. 2:82 and 2:84 (O) are the same unnamed second student (male). 2:121 has an instructor run and then one run (S) by an unnamed student. Spoken lines that are embedded in narrator runs (not N-named speakers, so not in narrator_exceptions): 2:63, 2:65, 2:67, 2:69 are answers shouted by about ten students in unison; 2:126 is about ten people replying together; 2:137 is Fin and Zei speaking a Dzegoban slogan in unison. 2:9 and 2:100 are Zei's unspoken thoughts inside narration."
+}

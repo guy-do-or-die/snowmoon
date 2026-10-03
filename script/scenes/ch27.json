@@ -1,0 +1,14 @@
+{
+  "chapter": 27,
+  "scenes": [
+    {"start": "27:1", "setting": "Gladias's government hotel room, Seila arrives with a new plan", "ambience": null},
+    {"start": "27:29", "setting": "forest path through Kalimar to Evelor's hill; open-air hilltop", "ambience": "forest_path"},
+    {"start": "27:41", "setting": "Evelor's hilltop room with the roof closed", "ambience": null},
+    {"start": "27:98", "setting": "meeting room in the government hotel, poll countdown and results", "ambience": null},
+    {"start": "27:140", "setting": "meeting room, the forecasting bots' answers", "ambience": null}
+  ],
+  "spots": [
+    {"id": "27:3", "sound": "door_knock", "why": "Gladias heard a knock on the door of his government hotel room"},
+    {"id": "27:35", "sound": "door_open", "why": "the door opened"}
+  ]
+}

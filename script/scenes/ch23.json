@@ -1,0 +1,8 @@
+{
+  "chapter": 23,
+  "scenes": [
+    {"start": "23:1", "setting": "underground cafeteria; speakers simulate forest cicadas to mask conversation", "ambience": "forest_path"},
+    {"start": "23:77", "setting": "Gladias in bed, Seila's call about Lily", "ambience": null}
+  ],
+  "spots": []
+}

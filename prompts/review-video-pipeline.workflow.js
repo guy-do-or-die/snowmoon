@@ -1,0 +1,32 @@
+export const meta = {
+  name: 'review-video-pipeline',
+  description: 'Review the audiobook video/caption pipeline for timing, sync and rendering bugs, then verify each finding',
+  phases: [{ title: 'Review' }, { title: 'Verify' }],
+}
+const ROOT = '<path to this repository>'
+const CONTEXT = `You are reviewing a small pipeline that turns a finished multi-voice audiobook into a 10-hour 1080p24 video for YouTube. Files (read them in full, with Read):
+- ${ROOT}/tools/video.py  - renders per-chapter videos (ASCII cellular automaton background, chapter cards, figure/screen panels, word-synced captions) and joins them with the chapters' audio.
+- ${ROOT}/tools/align.py  - gets word timestamps for every voiced clip (ElevenLabs forced alignment) and maps words to script lines/speakers -> audio/work/words_chNN.json.
+- ${ROOT}/tools/assemble.py - builds each chapter's audio (audio/eleven/Snowmoon - Chapter NN.m4a) from clips and writes audio/work/timeline_chNN.json: [[item id or "pause", seconds], ...] = where each work item starts in the chapter audio (after a 0.6 s lead).
+Data you can inspect: ${ROOT}/audio/work/ch01.json (work items: chunks with clip, seconds, text, speaker 'mix' for multi-voice chunks, end, cue, fx), timeline_ch01.json, words_ch01.json, ${ROOT}/script/final/ch01.json (lines with id, speaker, text, end, cue), ${ROOT}/script/raw/ch01.json (items with kind). A 30 s preview exists at ${ROOT}/audio/video/ch01.mp4. You may run read-only python snippets with /usr/bin/python3 (numpy + Pillow available) to check behaviour; do NOT modify any file, do NOT launch long renders, do NOT call any paid API.`
+const FINDINGS = { type: 'object', properties: { findings: { type: 'array', items: { type: 'object', properties: {
+  title: { type: 'string' }, file: { type: 'string' }, where: { type: 'string' }, severity: { type: 'string', enum: ['high', 'medium', 'low'] },
+  problem: { type: 'string' }, evidence: { type: 'string' }, fix: { type: 'string' } }, required: ['title', 'file', 'where', 'severity', 'problem', 'evidence', 'fix'] } } }, required: ['findings'] }
+const VERDICT = { type: 'object', properties: { real: { type: 'boolean' }, reasoning: { type: 'string' }, corrected_fix: { type: 'string' } }, required: ['real', 'reasoning'] }
+const DIMENSIONS = [
+  { key: 'timing', prompt: `${CONTEXT}\n\nDimension: TIMING AND SYNC. Check: (1) align.py's mapping of aligned words to script lines and speakers (consumption of lines per chunk, word counts after tag stripping, punctuation-attached tokens, lines dropped or merged, the single-line clips with fx); (2) video.py events(): the estimate of when a line starts inside a chunk, the handling of pauses/datelines/headings, chapter 1's extra title card, chapter 32's ending card; (3) caption_units and Captions.frame: unit boundaries, overlaps, the highlighted word window, the monotone cursor self.i when units overlap; (4) join(): per-chapter video length is int(secs*FPS)+1 frames with -t secs, audio is concatenated separately - will audio and video drift over 32 chapters, and by how much? Any off-by-one between the 0.6 s lead in assemble.py and the timeline? Report only real defects with evidence (run small checks on ch01 data).` },
+  { key: 'robustness', prompt: `${CONTEXT}\n\nDimension: ROBUSTNESS AND PERFORMANCE of a 10-hour render in 4 parallel processes (ProcessPoolExecutor over chapters). Check: memory growth (rendered cache eviction logic in render_chapter, Captions.layout cache), the ffmpeg pipe (writes of 6 MB frames, -t, error handling if ffmpeg dies, the .tmp.mp4 rename), the resume check (duration tolerance), exceptions in events() for chapters with missing figures/words files, the duration() monkeypatch in --preview, font loading per process, numpy dtype/overflow in background(), any O(n^2) in the per-frame loop (e.g. scanning all events every frame, Captions.frame loop), and estimate frames/second. Report only real defects with evidence.` },
+  { key: 'visual', prompt: `${CONTEXT}\n\nDimension: VISUAL CORRECTNESS AND TYPOGRAPHY LOGIC. Check: panel_text truncating to 22 lines silently (which book screens exceed it? count lines for the long device blocks in script/final, e.g. the 5-tier rubric table, the public activities table, Lord Ephelion's posters, Deluin's letters) and whether long panels overlap the caption strip; figure panels vs caption strip; caption text wider than the frame (units up to 80 chars at 38 px Inter - measure the widest unit in words_ch01.json with Pillow); dateline_text parsing for datelines with and without a place; the chapter card for chapter 1 (two cards back to back); the scene-break rule timing; caption units that start with a fragment like '20.' because of the 80-char cap; speaker label for 'mix'. Report only real defects with evidence.` },
+]
+const results = await pipeline(
+  DIMENSIONS,
+  d => agent(d.prompt, { label: `review:${d.key}`, phase: 'Review', schema: FINDINGS }),
+  (review, d) => parallel((review?.findings || []).map(f => () =>
+    parallel([0, 1].map(k => () => agent(`${CONTEXT}\n\nA reviewer claims this defect in the pipeline:\nTitle: ${f.title}\nFile/where: ${f.file} ${f.where}\nProblem: ${f.problem}\nEvidence: ${f.evidence}\nProposed fix: ${f.fix}\n\nYour job (perspective ${k === 0 ? 'skeptic: try to REFUTE it by reading the code and running a check on the ch01 data' : 'reproducer: try to CONFIRM it concretely with a check on the ch01 data or a worked example'}): decide whether it is a real defect that would be visible or audible in the final 10-hour video. Default to real=false if you cannot show it. If real, give the corrected fix if the proposed one is wrong.`, { label: `verify:${d.key}:${f.title.slice(0, 30)}`, phase: 'Verify', schema: VERDICT })))
+      .then(vs => ({ ...f, votes: vs.filter(Boolean), real: vs.filter(Boolean).filter(v => v.real).length >= 1 && !(vs.filter(Boolean).length === 2 && vs.filter(Boolean).filter(v => !v.real).length === 2) }))
+  ))
+)
+const all = results.flat().filter(Boolean)
+const confirmed = all.filter(f => f.real)
+log(`${all.length} findings, ${confirmed.length} confirmed`)
+return { confirmed: confirmed.map(f => ({ title: f.title, file: f.file, where: f.where, severity: f.severity, problem: f.problem, fix: f.fix, verifier_notes: f.votes.map(v => v.reasoning + (v.corrected_fix ? ' | corrected fix: ' + v.corrected_fix : '')) })), rejected: all.filter(f => !f.real).map(f => f.title) }

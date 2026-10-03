@@ -1,0 +1,47 @@
+{
+  "chapter": 14,
+  "scenes": [
+    {
+      "start": "14:1",
+      "setting": "hotel room, alarm and juice",
+      "ambience": null
+    },
+    {
+      "start": "14:7",
+      "setting": "hotel lobby restaurant with Bai",
+      "ambience": "restaurant"
+    },
+    {
+      "start": "14:31",
+      "setting": "semi-final in the arena",
+      "ambience": "stadium_crowd"
+    },
+    {
+      "start": "14:99",
+      "setting": "waiting room, watching Deluin vs Kau",
+      "ambience": null
+    },
+    {
+      "start": "14:111",
+      "setting": "courtyard, tea with Deluin",
+      "ambience": "restaurant"
+    }
+  ],
+  "spots": [
+    {
+      "id": "14:3",
+      "sound": "alarm",
+      "why": "Zei's alarm buzzed"
+    },
+    {
+      "id": "14:29",
+      "sound": "watch_buzz",
+      "why": "Zei's watch buzzed. The car ... had arrived"
+    },
+    {
+      "id": "14:95",
+      "sound": "alarm",
+      "why": "a few hundred turns after that, an alarm buzzed"
+    }
+  ]
+}

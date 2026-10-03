@@ -1,0 +1,42 @@
+{
+  "chapter": 11,
+  "scenes": [
+    {
+      "start": "11:1",
+      "setting": "grass field, families watching the children's Helisport game",
+      "ambience": "stadium_crowd"
+    },
+    {
+      "start": "11:88",
+      "setting": "Keeper booth, air quality circle",
+      "ambience": null
+    },
+    {
+      "start": "11:125",
+      "setting": "off the autobus, walking home past the Hydrafill ad, Seila joins",
+      "ambience": "city_street"
+    },
+    {
+      "start": "11:144",
+      "setting": "home, food truck dinner",
+      "ambience": "home_interior"
+    }
+  ],
+  "spots": [
+    {
+      "id": "11:26",
+      "sound": "drones_flyby",
+      "why": "four bright red drones ... sprang out and flew into the sky"
+    },
+    {
+      "id": "11:80",
+      "sound": "crowd_cheer",
+      "why": "Many in the audience cheered"
+    },
+    {
+      "id": "11:144",
+      "sound": "door_open",
+      "why": "Gladias put his watch against the circle, and the door opened"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "chapter": 7,
+  "scenes": [
+    {
+      "start": "7:1",
+      "setting": "courtyard cafe, Zei reviewing strategies, Fin arrives",
+      "ambience": "restaurant"
+    },
+    {
+      "start": "7:24",
+      "setting": "next day, climbing the slope to the mountain pyramid with Fin and Bai; distant explosion",
+      "ambience": "forest_path"
+    },
+    {
+      "start": "7:46",
+      "setting": "pyramid tunnels and the waiting room with Mu",
+      "ambience": null
+    },
+    {
+      "start": "7:57",
+      "setting": "the final game in the arena",
+      "ambience": "stadium_crowd"
+    },
+    {
+      "start": "7:133",
+      "setting": "waiting room, prizes and Mu's lesson",
+      "ambience": null
+    }
+  ],
+  "spots": [
+    {
+      "id": "7:35",
+      "sound": "explosion_distant",
+      "why": "the ground shook slightly ... a cloud of smoke emerging in the distance"
+    },
+    {
+      "id": "7:131",
+      "sound": "crowd_cheer",
+      "why": "The audience cheered"
+    }
+  ]
+}

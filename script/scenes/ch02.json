@@ -1,0 +1,52 @@
+{
+  "chapter": 2,
+  "scenes": [
+    {
+      "start": "2:1",
+      "setting": "Hun Min street, lively commercial street in Pafogai Du",
+      "ambience": "city_street"
+    },
+    {
+      "start": "2:37",
+      "setting": "arriving at DU, down the stairs into the underground classroom",
+      "ambience": "classroom"
+    },
+    {
+      "start": "2:46",
+      "setting": "DU physics class on thermodynamics",
+      "ambience": "classroom"
+    },
+    {
+      "start": "2:109",
+      "setting": "bombed classroom: smoke, watch alarms, checking for injuries",
+      "ambience": null
+    },
+    {
+      "start": "2:129",
+      "setting": "emptied classroom, sweeping debris, talk with the instructor",
+      "ambience": null
+    }
+  ],
+  "spots": [
+    {
+      "id": "2:11",
+      "sound": "drones_flyby",
+      "why": "A drone buzzed as it flew overhead"
+    },
+    {
+      "id": "2:24",
+      "sound": "watch_buzz",
+      "why": "The watch buzzed. Zei got a notification"
+    },
+    {
+      "id": "2:105",
+      "sound": "explosion_distant",
+      "why": "A loud noise erupted from a nearby room. The whole room shook"
+    },
+    {
+      "id": "2:115",
+      "sound": "alarm",
+      "why": "Every student's watch ... started beeping loudly"
+    }
+  ]
+}

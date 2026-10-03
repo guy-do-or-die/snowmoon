@@ -1,0 +1,70 @@
+{
+  "chapter": 21,
+  "characters": [
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult, about Gladias's age (late 30s)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, blogger on economics and culture, mother of Zven and Lily. Sharp, quick, warm but direct; in ch21 and ch23 she is furious and shouts (lines in capitals), in ch20 a determined investigator who wins people's trust."
+    },
+    {
+      "name": "Vil",
+      "letter": "V",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Co-father in Gladias and Seila's co-family (father of Febric and Hreda, 'Uncle Vil' to Zven and Lily); calm, measured, a little tired; in a long lawsuit against his former employer."
+    },
+    {
+      "name": "Lily",
+      "letter": "L",
+      "gender": "female",
+      "age": "child/teen (school age, exact age not given)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias and Seila's daughter; usually withdrawn and struggling at school, here bursting in excited about a good test score."
+    },
+    {
+      "name": "Daia",
+      "letter": "D",
+      "gender": "female",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Co-mother (Vil's wife, 'Aunt Daia'); warm, friendly, keeps the dinner-table conversation going."
+    },
+    {
+      "name": "Zven",
+      "letter": "Z",
+      "gender": "male",
+      "age": "child, about 10-12",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias and Seila's young son; energetic, excitable, proud of his Helisport and physics; calls Gladias 'Dad'."
+    },
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia thread; a Keeper in the Order of Steering, husband of Seila, father of Zven and Lily. Thoughtful, earnest, a bit naive and philosophical; calm, curious, humble when wrong."
+    }
+  ],
+  "letters": {
+    "S": "Seila",
+    "V": "Vil",
+    "L": "Lily",
+    "D": "Daia",
+    "Z": "Zven",
+    "G": "Gladias"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No exceptions. V is Vil (not Verdow), Z is Zven (not Zei), L is Lily, D is Daia. From 21:48 on, Gladias and Seila talk over a voice call (Gladias is the remote party; the scene is from Seila's side) - Seila is angry and shouts in places (capitals). All attributions confident."
+}

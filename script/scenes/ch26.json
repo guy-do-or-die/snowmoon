@@ -1,0 +1,16 @@
+{
+  "chapter": 26,
+  "scenes": [
+    {"start": "26:1", "setting": "aeroplane cabin descending toward Meldan, translating the announcements", "ambience": "aircraft_cabin"},
+    {"start": "26:44", "setting": "aeroplane at rest; deplaning through the gate autobus", "ambience": null},
+    {"start": "26:50", "setting": "black car with Verdow to the government hotel; reunion with Seila", "ambience": "vehicle_interior"},
+    {"start": "26:78", "setting": "Zei's console, commanding the Tafindel rescue in Redshire", "ambience": "war_room"},
+    {"start": "26:161", "setting": "debrief after the rescue, over earpieces", "ambience": null},
+    {"start": "26:170", "setting": "booth with five judges", "ambience": null}
+  ],
+  "spots": [
+    {"id": "26:47", "sound": "door_open", "why": "the door to their cabin automatically opened"},
+    {"id": "26:123", "sound": "explosion_distant", "why": "It had been directly hit, and exploded in midair"},
+    {"id": "26:131", "sound": "explosion_distant", "why": "there was a large explosion and smoke"}
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "chapter": 28,
+  "characters": [
+    {
+      "name": "Verdow",
+      "letter": "V",
+      "gender": "male",
+      "age": "adult (senator, middle-aged or older; has a daughter)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Senator Verdow: warm, jovial, quick to laugh, internationally minded; the senator Gladias trusts. Gives long reflective, philosophical speeches (law in ch25, society and the future in ch32)."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen, 18",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego thread; national Minpentai champion and gifted cryptographer, now supervising drone combat for the Kungaupei and Veridia. Quick, precise, fluent technical explainer; playful with friends; tense, despairing and then elated during the battles (ch26, ch29-30). Occasionally speaks Dzegoban."
+    },
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen, about 18 (Zei's peer)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Minpentai player, formerly Zei's rival, now his close and affectionate ally. Confident, socially astute, a persuasive negotiator (ch28); steady and supportive under pressure (ch29); teasing humour."
+    },
+    {
+      "name": "Lektor",
+      "letter": "L",
+      "gender": "male",
+      "age": "adult, middle-aged",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Respected Veridian general, later head general and overall commander of the Northshore offensive. Forthright, sceptical but open-minded in ch28; loud, firm, commanding when giving orders in ch29-30."
+    },
+    {
+      "name": "Den",
+      "letter": "D",
+      "gender": "male",
+      "age": "adult (senior figure)",
+      "kind": "human",
+      "origin": "Dzego",
+      "voice_notes": "High Council member of the Kungaupei (Dzego's shadow defence organisation), Zei's mentor and mission commander. Composed, authoritative, dry and blunt; leads Group South and is killed in ch29 (his ch30 line is a remembered quote)."
+    },
+    {
+      "name": "Mu",
+      "letter": "M",
+      "gender": "female",
+      "age": "older adult (described earlier as an older woman)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Kungaupei member and former Minpentai tournament organiser, a mentor figure to Zei and Bai. Calm, soft-spoken, quietly brilliant improviser who stays cool in a crisis; gentle, with wry humour."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult, about Gladias's age (late 30s)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, blogger on economics and culture, mother of Zven and Lily. Sharp, warm, direct; the strategist behind the Silverchat poll (ch27); loving and protective with her children; calls Gladias 'Glad'."
+    },
+    {
+      "name": "Zven",
+      "letter": "Z",
+      "gender": "male",
+      "age": "child, about 10-12",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias and Seila's young son; energetic, excitable, bursts in with news about Lily; calls his parents 'Mom' and 'Dad'."
+    },
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia thread; a Keeper in the Order of Steering, husband of Seila, father of Zven and Lily. Thoughtful, earnest, calm and curious; in these chapters more confident and argumentative (pitches the court case to the judges), tender with his family. Occasionally speaks slow, careful Dzegoban."
+    }
+  ],
+  "letters": {
+    "V": "Verdow",
+    "Z": "Zven",
+    "B": "Bai",
+    "L": "Lektor",
+    "D": "Den",
+    "M": "Mu",
+    "S": "Seila",
+    "G": "Gladias"
+  },
+  "exceptions": [
+    {
+      "id": "28:7",
+      "letter": "Z",
+      "speaker": "Zei"
+    },
+    {
+      "id": "28:9",
+      "letter": "Z",
+      "speaker": "Zei"
+    }
+  ],
+  "narrator_exceptions": [],
+  "notes": "Z is shared: in the first scene (conference room with Lektor) Z is Zei, only at 28:7 and 28:9 (listed as exceptions); in the family scene from 28:56 on Z is Zven, Gladias and Seila's son (28:56 is Zven calling through the door). The two never share a scene. L is General Lektor (Lily is only talked about). In 28:65-28:67 Zven is retelling what Lily and her instructor said - still Zven's voice. 28:9 has no speech tag; attributed to Zei because it continues his question at 28:7 (high confidence). All other attributions confident."
+}

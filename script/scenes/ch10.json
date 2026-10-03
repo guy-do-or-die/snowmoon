@@ -1,0 +1,42 @@
+{
+  "chapter": 10,
+  "scenes": [
+    {
+      "start": "10:1",
+      "setting": "Freetown Economics Institute restaurant, Jahn and Utaku",
+      "ambience": "restaurant"
+    },
+    {
+      "start": "10:28",
+      "setting": "Meldan: Gladias and Seila talk before his first Keeper meetings (location unstated, likely home)",
+      "ambience": null
+    },
+    {
+      "start": "10:49",
+      "setting": "Keeper booth courtyard, sealed booth, cultural values circle",
+      "ambience": null
+    },
+    {
+      "start": "10:95",
+      "setting": "break outside, then the second booth: bug sweep and hardware openness circle",
+      "ambience": null
+    },
+    {
+      "start": "10:156",
+      "setting": "Pafogai Du courtyard table, Bai and Zei playing Minpentai",
+      "ambience": "restaurant"
+    },
+    {
+      "start": "10:176",
+      "setting": "long room in the pyramid, Den and Mu reveal Minpentai's purpose",
+      "ambience": null
+    }
+  ],
+  "spots": [
+    {
+      "id": "10:110",
+      "sound": "drones_flyby",
+      "why": "He also took out a drone ... The drone began flying around the room"
+    }
+  ]
+}

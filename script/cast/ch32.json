@@ -1,0 +1,50 @@
+{
+  "chapter": 32,
+  "characters": [
+    {
+      "name": "Verdow",
+      "letter": "V",
+      "gender": "male",
+      "age": "adult (senator, middle-aged or older; has a daughter)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Senator Verdow: warm, jovial, quick to laugh, internationally minded; the senator Gladias trusts. Gives long reflective, philosophical speeches (law in ch25, society and the future in ch32)."
+    },
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia thread; a Keeper in the Order of Steering, husband of Seila, father of Zven and Lily. Thoughtful, earnest, calm and curious; in these chapters more confident and argumentative (pitches the court case to the judges), tender with his family. Occasionally speaks slow, careful Dzegoban."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen, 18",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego thread; national Minpentai champion and gifted cryptographer, now supervising drone combat for the Kungaupei and Veridia. Quick, precise, fluent technical explainer; playful with friends; tense, despairing and then elated during the battles (ch26, ch29-30). Occasionally speaks Dzegoban."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult, about Gladias's age (late 30s)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, blogger on economics and culture, mother of Zven and Lily. Sharp, warm, direct; the strategist behind the Silverchat poll (ch27); loving and protective with her children; calls Gladias 'Glad'."
+    }
+  ],
+  "letters": {
+    "V": "Verdow",
+    "G": "Gladias",
+    "Z": "Zei",
+    "S": "Seila"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No exceptions: V is Verdow, G is Gladias, Z is Zei, S is Seila throughout. 32:17 is Gladias ordering from the robot in deliberately clear Dzegoban (the robot only buzzes, it does not speak). 32:7 is an N-coded written advertisement (Hydrafill poster), left to the narrator. All attributions confident."
+}

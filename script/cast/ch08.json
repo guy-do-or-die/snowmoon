@@ -1,0 +1,163 @@
+{
+  "chapter": 8,
+  "characters": [
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia chapters. Thoughtful, calm, gentle, philosophical, with an occasional mischievous streak; a little awkward under pressure. Acolyte of the Order of Steering (accepted as a Keeper in ch. 8). Husband of Seila, father of Zven and Lily. Many of his lines are subvocalised whispers through a neck band."
+    },
+    {
+      "name": "Sylka",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult (university president; likely middle-aged or older)",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Professor Sylka, president of Veridia National University, heard in a livestreamed debate; measured, principled, rhetorical academic."
+    },
+    {
+      "name": "Mov",
+      "letter": "M",
+      "gender": "male",
+      "age": "adult (established Order member; Gladias's peer or slightly senior)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's close friend and mentor in the Order of Steering (a Keeper, selected as a Herald in ch. 8). Wry, sarcastic, sharp, security-paranoid but warm underneath; talks fast and knowledgeably. Partly heard by call/earpiece."
+    },
+    {
+      "name": "Ephelion",
+      "letter": "E",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Arctic Empire",
+      "voice_notes": "Lord Ephelion, Arctic Empire consul/ambassador to Veridia, heard in a livestreamed debate; polished, fluent, commanding and condescending demagogue. Also the signatory of the propaganda poster in ch. 3 (narrated)."
+    },
+    {
+      "name": "Chairman",
+      "letter": "C",
+      "gender": "male",
+      "age": "adult (senior senator)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Chairman of the Parliament committee running Gladias's selection hearing; formal, procedural, authoritative, with a touch of ceremony; casts the tie-breaking vote."
+    },
+    {
+      "name": "Vil",
+      "letter": "V",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "'Uncle Vil', co-parent in Gladias and Seila's co-family and Febric's father. Practical, kind, blunt and down-to-earth. Two of his lines are written messages."
+    },
+    {
+      "name": "Papli",
+      "letter": "P",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Senator Papli on the selection committee; hostile, populist, combative, anti-intellectual; rapid-fire interruptions."
+    },
+    {
+      "name": "Ancus",
+      "letter": "A",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Senator Ancus on the selection committee; sympathetic to Gladias, direct, and forceful when he rounds on Papli."
+    },
+    {
+      "name": "Lily",
+      "letter": "L",
+      "gender": "female",
+      "age": "child or young teen (school age; exact age not given)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Quiet, downcast, low self-confidence about school results; daughter of Gladias and Seila. Mumbling in ch. 1, sobbing in ch. 8."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult (age not stated; Gladias's wife, roughly his age)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Warm, upbeat, curious and encouraging; a blogger on economics and culture. Wife of Gladias, mother of Zven and Lily. Travels to Freetown and then Iptak."
+    },
+    {
+      "name": "debate moderator",
+      "letter": "M",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Moderator of the livestreamed Sylka-Ephelion debate; one firm interjection."
+    },
+    {
+      "name": "Verdow",
+      "letter": "V",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia",
+      "voice_notes": "Senator Verdow on the selection committee; neutral, probing, businesslike questioner."
+    }
+  ],
+  "letters": {
+    "G": "Gladias",
+    "S": "Sylka",
+    "M": "Mov",
+    "E": "Ephelion",
+    "C": "Chairman",
+    "V": "Vil",
+    "P": "Papli",
+    "A": "Ancus",
+    "L": "Lily"
+  },
+  "exceptions": [
+    {
+      "id": "8:12",
+      "letter": "S",
+      "speaker": "Seila"
+    },
+    {
+      "id": "8:157",
+      "letter": "S",
+      "speaker": "Seila"
+    },
+    {
+      "id": "8:159",
+      "letter": "S",
+      "speaker": "Seila"
+    },
+    {
+      "id": "8:39",
+      "letter": "M",
+      "speaker": "debate moderator"
+    },
+    {
+      "id": "8:56",
+      "letter": "V",
+      "speaker": "Verdow"
+    },
+    {
+      "id": "8:58",
+      "letter": "V",
+      "speaker": "Verdow"
+    },
+    {
+      "id": "8:60",
+      "letter": "V",
+      "speaker": "Verdow"
+    }
+  ],
+  "narrator_exceptions": [],
+  "notes": "Three letters are shared in this chapter. S: Professor Sylka has the most runs (8:24 both runs, 8:26, 8:28, 8:29, 8:30, 8:38) so she is the default; Seila has 8:12 (a reply message), 8:157 and 8:159 (a call). M: Mov is the default (8:16 is a written message from him; 8:145-8:153 a call); 8:39 is the debate moderator. V: Vil is the default with 4 runs (8:114 and 8:120 are written messages; 8:133 is spoken, two runs); Senator Verdow has 3 runs (8:56, 8:58, 8:60) - a near tie, so check this default suits you. E in this chapter is Lord Ephelion, NOT Emerald (who is E in ch. 3). C is the committee Chairman throughout, including the unattributed opening lines 8:46-8:48. 8:89 has two A runs, both Ancus; 8:94 has two P runs, both Papli. 8:24 Sylka's first line is read by Gladias as subtitles before the audio connects; the debate (8:24-8:40) is a livestream. 8:11, 8:118 and 8:122 are Gladias whispering messages through his neck band."
+}

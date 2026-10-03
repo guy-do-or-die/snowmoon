@@ -1,0 +1,37 @@
+{
+  "chapter": 5,
+  "scenes": [
+    {
+      "start": "5:1",
+      "setting": "Freetown air harbor exit, taxi ride through the city",
+      "ambience": "vehicle_interior"
+    },
+    {
+      "start": "5:20",
+      "setting": "hotel garage and lobby, check-in",
+      "ambience": null
+    },
+    {
+      "start": "5:28",
+      "setting": "hotel lobby, then out into Freetown's streets with Bai",
+      "ambience": "city_street"
+    },
+    {
+      "start": "5:41",
+      "setting": "Freetown Economics Institute restaurant, lecture screen, meeting Seila and Jahn",
+      "ambience": "restaurant"
+    },
+    {
+      "start": "5:95",
+      "setting": "video call between Seila and Gladias",
+      "ambience": null
+    }
+  ],
+  "spots": [
+    {
+      "id": "5:26",
+      "sound": "watch_buzz",
+      "why": "Zei, Bai and Min's watches all buzzed in unison"
+    }
+  ]
+}

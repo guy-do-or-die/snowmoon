@@ -1,0 +1,70 @@
+{
+  "chapter": 14,
+  "characters": [
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen (same age as Zei)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Sharp, competitive, teasing; orphan who had to fend for herself, guarded but warming up. Zei's Minpentai rival turned sparring partner."
+    },
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen (final year of high school, about 17-18)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Bright, intense, earnest; maths-minded Minpentai prodigy now studying cryptography; protagonist of the Dzego chapters. Proud but self-aware, eager to please his mentors."
+    },
+    {
+      "name": "tournament announcer (Sadzu Du nationals)",
+      "letter": "A",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "announcer",
+      "origin": "Dzego (Sadzu Du)",
+      "voice_notes": "Stadium announcer at the national championship in Sadzu Du; grand, showman-like, addresses audience and players. A different venue from the Pafogai Du tournament announcer of chapters 4 and 7 (merge if one announcer voice is preferred)."
+    },
+    {
+      "name": "loud automated voice (Sadzu Du)",
+      "letter": "L",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "device",
+      "origin": "Dzego (Sadzu Du)",
+      "voice_notes": "Stadium countdown voice at the national championship that booms Dzegoban numerals in capitals; described as sounding more female than the Pafogai Du countdown voice of chapters 4 and 7, so cast it as a separate, female-sounding machine voice (or merge if one countdown voice is preferred)."
+    },
+    {
+      "name": "Deluin",
+      "letter": "D",
+      "gender": "male",
+      "age": "teen (older teen)",
+      "kind": "human",
+      "origin": "Redshire, United Cities",
+      "voice_notes": "Foreign contestant at the Minpentai nationals; friendly, confident, witty, a little lecturing; becomes Zei's friend. In chapter 15 he is only heard through written messages from occupied Redshire."
+    },
+    {
+      "name": "restaurant robot",
+      "letter": "R",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "robot",
+      "origin": "Dzego (Sadzu Du)",
+      "voice_notes": "Dzego restaurant serving robot that asks its stock question in Dzegoban; cute, sing-song machine voice (Bai imitates it in 14:10). Same kind of robot as in chapters 4 and 7."
+    }
+  ],
+  "letters": {
+    "B": "Bai",
+    "Z": "Zei",
+    "A": "tournament announcer (Sadzu Du nationals)",
+    "L": "loud automated voice (Sadzu Du)",
+    "D": "Deluin",
+    "R": "restaurant robot"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No ambiguous attributions. D is Deluin throughout. At 14:10 Bai speaks Dzegoban in a cute voice imitating the restaurant robots; the real robot says the same phrase at 14:115."
+}

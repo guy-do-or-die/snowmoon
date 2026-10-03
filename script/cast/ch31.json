@@ -1,0 +1,100 @@
+{
+  "chapter": 31,
+  "characters": [
+    {
+      "name": "Zei",
+      "letter": "Z",
+      "gender": "male",
+      "age": "teen, 18",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Protagonist of the Dzego thread; national Minpentai champion and gifted cryptographer, now supervising drone combat for the Kungaupei and Veridia. Quick, precise, fluent technical explainer; playful with friends; tense, despairing and then elated during the battles (ch26, ch29-30). Occasionally speaks Dzegoban."
+    },
+    {
+      "name": "Deluin",
+      "letter": "D",
+      "gender": "male",
+      "age": "teen (older teenager, about Zei's age)",
+      "kind": "human",
+      "origin": "Redshire, United Cities",
+      "voice_notes": "Zei's friend and Minpentai rival from Redshire who went undercover as an Arctic commander. Warm, playful banter with Zei, then thoughtful and earnest when describing the Arctic Empire; sad about losing Redshire."
+    },
+    {
+      "name": "Bai",
+      "letter": "B",
+      "gender": "female",
+      "age": "teen, about 18 (Zei's peer)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Minpentai player, formerly Zei's rival, now his close and affectionate ally. Confident, socially astute, a persuasive negotiator (ch28); steady and supportive under pressure (ch29); teasing humour."
+    },
+    {
+      "name": "Mu",
+      "letter": "M",
+      "gender": "female",
+      "age": "older adult (described earlier as an older woman)",
+      "kind": "human",
+      "origin": "Dzego (Pafogai Du)",
+      "voice_notes": "Kungaupei member and former Minpentai tournament organiser, a mentor figure to Zei and Bai. Calm, soft-spoken, quietly brilliant improviser who stays cool in a crisis; gentle, with wry humour."
+    },
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia thread; a Keeper in the Order of Steering, husband of Seila, father of Zven and Lily. Thoughtful, earnest, calm and curious; in these chapters more confident and argumentative (pitches the court case to the judges), tender with his family. Occasionally speaks slow, careful Dzegoban."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult, about Gladias's age (late 30s)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, blogger on economics and culture, mother of Zven and Lily. Sharp, warm, direct; the strategist behind the Silverchat poll (ch27); loving and protective with her children; calls Gladias 'Glad'."
+    },
+    {
+      "name": "Lily",
+      "letter": "L",
+      "gender": "female",
+      "age": "teen (school age, exact age not given)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias and Seila's daughter, just freed from an Arctic boarding school in Northglade; emotional and apologetic at the reunion, then cheerful."
+    },
+    {
+      "name": "Hreda",
+      "letter": "H",
+      "gender": "female",
+      "age": "teen (school age, exact age not given)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Daughter of co-family Vil and Daia; math prodigy, bright, upbeat and articulate after months in the Greater Plum Harbor."
+    },
+    {
+      "name": "Febric",
+      "letter": "F",
+      "gender": "male",
+      "age": "teen (older teenager)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Son of co-family Vil and Daia; computer-science kid, calm, matter-of-fact, curious about Arctic food."
+    }
+  ],
+  "letters": {
+    "Z": "Zei",
+    "D": "Deluin",
+    "B": "Bai",
+    "M": "Mu",
+    "G": "Gladias",
+    "S": "Seila",
+    "L": "Lily",
+    "H": "Hreda",
+    "F": "Febric"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No exceptions. D is Deluin throughout (Den is dead; this is Deluin's first spoken appearance since the earlier Dzego chapters). L is Lily (not Lektor), F is Febric (not Fin), H is Hreda. 31:29 contains a line of Dzegoban poetry spoken by Deluin. 31:70 is an N-coded message header (from Jahn, images only). All attributions confident."
+}

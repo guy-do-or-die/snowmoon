@@ -1,0 +1,37 @@
+{
+  "chapter": 16,
+  "scenes": [
+    {
+      "start": "16:1",
+      "setting": "sealed barrier booth, confrontation with Delwart",
+      "ambience": null
+    },
+    {
+      "start": "16:32",
+      "setting": "hot day on the Kalimar path, call with Mov",
+      "ambience": "forest_path"
+    },
+    {
+      "start": "16:52",
+      "setting": "restaurant near home with Febric, Helisport on screen, recovery test",
+      "ambience": "restaurant"
+    },
+    {
+      "start": "16:116",
+      "setting": "home, Gladias tells Seila about Dzego",
+      "ambience": "home_interior"
+    }
+  ],
+  "spots": [
+    {
+      "id": "16:104",
+      "sound": "watch_buzz",
+      "why": "Gladias's watch immediately buzzed"
+    },
+    {
+      "id": "16:113",
+      "sound": "watch_buzz",
+      "why": "Gladias's watch buzzed again. Three signatures done"
+    }
+  ]
+}

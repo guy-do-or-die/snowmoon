@@ -1,0 +1,110 @@
+{
+  "chapter": 1,
+  "characters": [
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult, 39",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia chapters. Thoughtful, calm, gentle, philosophical, with an occasional mischievous streak; a little awkward under pressure. Acolyte of the Order of Steering (accepted as a Keeper in ch. 8). Husband of Seila, father of Zven and Lily. Many of his lines are subvocalised whispers through a neck band."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult (age not stated; Gladias's wife, roughly his age)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Warm, upbeat, curious and encouraging; a blogger on economics and culture. Wife of Gladias, mother of Zven and Lily. Travels to Freetown and then Iptak."
+    },
+    {
+      "name": "Zven",
+      "letter": "Z",
+      "gender": "male",
+      "age": "child (the younger boy)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Excitable, loud, playful and competitive; son of Gladias and Seila."
+    },
+    {
+      "name": "Febric",
+      "letter": "F",
+      "gender": "male",
+      "age": "teen (older teenager, not quite an adult)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Bright, enthusiastic, affectionate programming geek; son of Vil and Daia (the co-family); calls Gladias 'Uncle Glad'."
+    },
+    {
+      "name": "Lily",
+      "letter": "L",
+      "gender": "female",
+      "age": "child or young teen (school age; exact age not given)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Quiet, downcast, low self-confidence about school results; daughter of Gladias and Seila. Mumbling in ch. 1, sobbing in ch. 8."
+    },
+    {
+      "name": "boy with drone",
+      "letter": "B",
+      "gender": "male",
+      "age": "child (young boy)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "One excited shout while playing a drone-catching game with his family."
+    },
+    {
+      "name": "entrance gate machine",
+      "letter": "M",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "device",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Short synthetic confirmation voice from a credential-checking gate; robotic but approving. Ch. 1 is the concert gate, ch. 3 the Greater Plum Harbor gate; same type of voice."
+    },
+    {
+      "name": "burly man at concert",
+      "letter": "P",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Large concertgoer who shouts over loud metal music to expose Gladias for the bounty and then films him; loud, rough yell."
+    },
+    {
+      "name": "hand device",
+      "letter": "D",
+      "gender": "none",
+      "age": "n/a",
+      "kind": "device",
+      "origin": "Veridia",
+      "voice_notes": "The burly man's handheld device confirming a voice command; terse, flat synthetic readout."
+    },
+    {
+      "name": "Anonymous",
+      "letter": "A",
+      "gender": "male",
+      "age": "adult",
+      "kind": "written",
+      "origin": "Veridia",
+      "voice_notes": "Written text messages from an anonymous verified sender; calm, polite but faintly menacing. The sender is revealed in ch. 3 to be Delwart, so Delwart's voice (or a neutral message-readout voice) fits."
+    }
+  ],
+  "letters": {
+    "G": "Gladias",
+    "S": "Seila",
+    "Z": "Zven",
+    "F": "Febric",
+    "L": "Lily",
+    "B": "boy with drone",
+    "M": "entrance gate machine",
+    "P": "burly man at concert",
+    "D": "hand device",
+    "A": "Anonymous"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [],
+  "notes": "No letter is shared by two speakers in this chapter, so there are no exceptions. 1:86 (P) has no named speaker in the text (an unidentified person behind Gladias); I assigned it to the burly man who is then found right behind Gladias filming him - likely but not explicit. 1:152 and 1:156 (A) are written messages from 'Anonymous'; the sender turns out to be Delwart (ch. 3), so Delwart's voice can be reused. 1:97 (D) is the burly man's hand device answering Gladias's voice command. 1:13 is a silent subvocalised command to Emerald; 1:96 is a spoken command to the stolen device. Sung/quoted text that sits in narrator runs: 1:60 and 1:70 are lyrics sung by Dreadknot's lead singer (gnarly metal voice); they are N runs and are not listed as narrator exceptions because the singer is not an N-named character."
+}

@@ -1,0 +1,115 @@
+{
+  "chapter": 13,
+  "characters": [
+    {
+      "name": "Delwart",
+      "letter": "D",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "The 'mysterious gentleman' who lobbies Gladias against interventionist rubrics; secretly working for Silverchat. Smooth, persuasive, ideological; contrite in chapter 16."
+    },
+    {
+      "name": "Gladias",
+      "letter": "G",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Protagonist of the Veridia chapters; newly made Keeper in the Order. Thoughtful, earnest, slightly awkward, argues carefully. Inside Keeper booths he is addressed by a number (Four, Six or Two depending on the circle)."
+    },
+    {
+      "name": "Mov",
+      "letter": "M",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's friend and fellow Keeper who shadows Delwart for him. Dry, wry, security-minded, speaks in confident clipped statements. Usually heard over a call."
+    },
+    {
+      "name": "Seila",
+      "letter": "S",
+      "gender": "female",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Gladias's wife, mother, economics-and-culture blogger. Warm, playful, quick; fond of Dzego; protective of the children."
+    },
+    {
+      "name": "Hreda",
+      "letter": "H",
+      "gender": "female",
+      "age": "teen (school age, exact age not given)",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Vil and Daia's daughter, a maths whiz; one short, matter-of-fact line."
+    },
+    {
+      "name": "Thirteen",
+      "letter": "T",
+      "gender": "female",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Keeper who chairs the hardware-openness circle; brisk, businesslike, lightly teasing. States in chapter 13 that she is female. Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "Zero",
+      "letter": "Z",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Keeper in the hardware-openness circle who drafts the amendment exempting military hardware; argumentative, relativist, soft on the Arctics. Narration uses 'he'. Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "Eighteen",
+      "letter": "E",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Keeper in the hardware-openness circle; security-savvy (sweeps the booth for bugs), hawkish about the Arctic threat, blunt and confident. Narration uses 'he'. Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "Nine",
+      "letter": "N",
+      "gender": "male",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Keeper in the hardware-openness circle; calm, dismissive of the Arctic threat, argues that Veridia should stay out of military tech. His speech is printed inside narrator (N) runs in quotation marks. Narration uses 'he'. Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    },
+    {
+      "name": "One (hardware openness circle)",
+      "letter": "O",
+      "gender": "unknown",
+      "age": "adult",
+      "kind": "human",
+      "origin": "Veridia (Meldan)",
+      "voice_notes": "Keeper numbered One in the hardware-openness circle; takes the Arctic threat seriously, speaks one terse, sober line. Probably not the same person as the One of chapter 10 (numbers are per circle). Keepers speak through neck bands with re-randomized AI-generated voices, so the voice need not reveal gender."
+    }
+  ],
+  "letters": {
+    "D": "Delwart",
+    "G": "Gladias",
+    "M": "Mov",
+    "S": "Seila",
+    "H": "Hreda",
+    "T": "Thirteen",
+    "Z": "Zero",
+    "E": "Eighteen",
+    "O": "One (hardware openness circle)"
+  },
+  "exceptions": [],
+  "narrator_exceptions": [
+    {
+      "id": "13:91",
+      "run": 0,
+      "speaker": "Nine"
+    }
+  ],
+  "notes": "M is Mov (13:29 is his written message, the rest a call). Z is Zero, not Zei, throughout this chapter. T is Thirteen. 13:91 is an N run that is entirely quoted speech with no tag; I attribute it to Nine (the Keeper whose lines are printed in narrator runs, and who dismissed the Arctic threat in chapter 10), replying to Eighteen - fairly confident but not stated. 13:68 is the on-screen written sermon of Lord Ephelion (Arctic Empire consul to Veridia), printed as narrator runs; it is text on a screen, not spoken, so it is not listed as an exception. O at 13:102 is the One of the hardware-openness circle, kept separate from chapter 10's One of the cultural-values circle."
+}
