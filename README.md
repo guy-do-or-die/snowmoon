@@ -18,7 +18,7 @@ uv pip install torch --index-url https://download.pytorch.org/whl/cpu    # only 
 uv pip install "kokoro>=0.9.4" "transformers>=4.45" soundfile requests numpy pillow beautifulsoup4 lxml
 ```
 
-Also needed: `ffmpeg`, `inkscape` (figures), and for the video the fonts referenced at the top of
+Also needed: `ffmpeg`, `inkscape` (figures), `chromium` (screens), and for the video the fonts referenced at the top of
 `tools/video.py` (Noto Sans Mono, Liberation Mono, DejaVu Serif from your distribution; Inter from
 https://rsms.me/inter) — or edit those paths.
 
@@ -41,7 +41,7 @@ sound effects; forced alignment and music did not count against the quota. Run
 | 4 | `tools/soundscape.py` | ambience beds, spot effects and music cues → `audio/sfx` |
 | 5 | `tools/assemble.py --chapters 1-32 --out eleven` | clips joined with pauses, voices levelled, ambience (`script/scenes`), spot sounds, music, device/PA effects, loudness mastered → `audio/eleven/*.m4a`, `audio/Snowmoon-eleven.m4b`, `audio/work/timeline_chNN.json` (`--plain`: voices only) |
 | 6 | `tools/align.py --chapters 1-32` | word timestamps per clip (forced alignment), mapped to lines and speakers → `audio/work/words_chNN.json` |
-| 7 | `tools/figures.py` | the book's inline SVG figures rendered to `audio/figures` |
+| 7 | `tools/figures.py`, `tools/screens.py` | the book's inline SVG figures → `audio/figures`; its device screens, messages, signs and quotes rendered with its own CSS in headless Chromium → `audio/screens` |
 | 8 | `tools/video.py --chapters 1-32` then `--join` | per-chapter videos with audio, `audio/Snowmoon.mp4`, `audio/youtube_chapters.txt` (`--preview 40`: the first 40 s of a chapter) |
 
 Every step is cached or resumable; re-running regenerates only what changed.
@@ -92,12 +92,14 @@ written, the narrator gets a short line written for the purpose; every such line
 ## The video edition
 
 Everything on screen is taken from the page: its dark-mode gradient and body grey, the h1 with its
-purple underline, the small-caps dateline, the navy console with Courier-style text for device
-screens, the quote bar, the slate sign card, and speech colours computed with the page's own formula
-(oklch 0.7 0.15, hue from the speaker's initial). The one thing that is ours is the automaton:
-Conway's Life in the page's glyphs, fed with gliders, in a palette per chapter mood — a nod to
-Minpentai, the book's Life-like game. Captions light each word as it is spoken; figures and screens
-appear with the narration, long screens paginated.
+purple underline, the small-caps dateline, and speech colours computed with the page's own formula
+(oklch 0.7 0.15, hue from the speaker's initial). Device screens, messages, signs and quotes are the
+page's own rendering (step 7); only screens too tall to read as an image fall back to paginated text
+in the page's console style. The one thing that is ours is the automaton: Conway's Life in the page's
+glyphs, fed with gliders — a nod to Minpentai, the book's Life-like game. Its colour, density and pace
+follow the scene (`script/scenes`: a forest path is slow and green, a stadium quick and warm, a
+battlefield restless and red) and pulse with the delivery directions (a shouted line stirs it, a
+whisper calms it). Captions light each word as it is spoken.
 
 ## Files
 

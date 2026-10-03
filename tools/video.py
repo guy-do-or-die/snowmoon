@@ -37,6 +37,8 @@ COLS, ROWS = W // CW, H // CH
 AUDIO_DIR = ROOT / "audio" / "eleven"
 OUT_DIR = ROOT / "audio" / "video"
 FIGURES = ROOT / "audio" / "figures"
+SCREENS = ROOT / "audio" / "screens"      # the page's device screens, messages, signs and quotes, rendered as shown
+SCREEN_MAX_H = 760                        # taller screens stay text pages (the image would be too small to read)
 MONO = "/usr/share/fonts/truetype/noto/NotoSansMono-Regular.ttf"       # automaton glyphs
 SANS = str(Path.home() / ".local/share/fonts/Inter-VariableFont_opsz,wght.ttf")  # closest to the page's system sans
 CONSOLE = "/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf"   # the page's device screens use Courier
@@ -67,8 +69,82 @@ PALETTE = {  # accent for living cells, highlight for new births, glyphs - all f
     "C": ((0xB8, 0xD8, 0xFF), (0xE6, 0xF4, 0xFF), "·•∘·◦"),   # the pale console blues
 }
 DOT_GLYPH, DOT_LEVEL = "·", 0.10
-CAP_FONT, LABEL_FONT = 38, 24
-CAP_Y, CAP_H = H - 150, 150          # caption strip at the bottom
+
+# Scene settings (script/scenes) -> hue of the page's speech-colour formula, base energy, glyphs.
+# Energy drives the automaton's pace, density and brightness; 0 is still and dim, 1 is restless.
+SCENE_MOOD = {
+    "forest_path": (146, 0.25, "∘•∘·○"), "city_street": (253, 0.45, "∘•○•·"), "concert_crowd": (26, 0.85, "+×▲+■"),
+    "classroom": (173, 0.30, "∘•·•∘"), "restaurant": (80, 0.35, "∘•○·•"), "stadium_crowd": (53, 0.80, "▲+■×+"),
+    "home_interior": (66, 0.30, "∘•·∘•"), "aircraft_cabin": (240, 0.35, "·•∘·•"), "winter_wind": (213, 0.40, "·∘·•·"),
+    "library": (280, 0.20, "·∘·•·"), "war_room": (346, 0.60, "+■×+▲"), "battlefield_distant": (13, 0.95, "×▲×■+"),
+    "vehicle_interior": (226, 0.45, "∘•∘·•"), "rain": (240, 0.40, "·•·∘·"),
+}
+# delivery directions -> energy pulse while the line is spoken
+DIRECTION_ENERGY = {"[shouting]": 0.7, "[angry]": 0.6, "[urgent]": 0.6, "[calling out]": 0.5, "[frightened]": 0.5,
+                    "[crying]": 0.4, "[excited]": 0.4, "[surprised]": 0.3, "[nervous]": 0.3, "[announcing]": 0.3,
+                    "[cheerful]": 0.2, "[laughs]": 0.2, "[whispers]": -0.35, "[softly]": -0.3, "[tender]": -0.3,
+                    "[sad]": -0.25, "[dejected]": -0.25, "[solemn]": -0.2, "[tired]": -0.2, "[gently]": -0.2,
+                    "[mumbling]": -0.15}
+
+
+class MoodTrack:
+    """Energy and colour as a function of chapter time."""
+
+    def __init__(self, ch, words, default_mood):
+        starts, ends = {}, {}
+        for w in words:
+            starts.setdefault(w["line"], w["t0"])
+            ends[w["line"]] = w["t1"]
+        acc_hue = {"A": 280, "B": 253, "C": 213}[default_mood]
+        self.default = (acc_hue, {"A": 0.35, "B": 0.5, "C": 0.3}[default_mood], PALETTE[default_mood][2])
+        self.scenes = []  # (t, hue, energy, glyphs)
+        f = ROOT / "script" / "scenes" / f"ch{ch:02d}.json"
+        if f.exists():
+            for sc in json.loads(f.read_text()).get("scenes", []):
+                t = starts.get(sc["start"])
+                if t is None:
+                    later = [v for k, v in starts.items() if int(k.split(":")[1]) >= int(sc["start"].split(":")[1])]
+                    t = min(later) if later else None
+                if t is None:
+                    continue
+                mood = SCENE_MOOD.get(sc.get("ambience") or "", self.default)
+                self.scenes.append((t, *mood))
+        self.scenes.sort()
+        self.pulses = []  # (t0, t1, delta)
+        f = ROOT / "script" / "directions" / f"ch{ch:02d}.json"
+        if f.exists():
+            for key, tag in json.loads(f.read_text()).items():
+                line = key.split("/")[0]
+                if line not in starts:
+                    continue
+                delta = sum(v for k, v in DIRECTION_ENERGY.items() if k in tag)
+                if delta:
+                    self.pulses.append((starts[line], ends[line], delta))
+
+    def at(self, t):
+        hue, energy, glyphs = self.default
+        prev = None
+        for i, sc in enumerate(self.scenes):
+            if sc[0] <= t:
+                prev = sc
+                hue, energy, glyphs = sc[1], sc[2], sc[3]
+                nxt = self.scenes[i + 1] if i + 1 < len(self.scenes) else None
+            else:
+                break
+        # cross-fade the colour and energy over the first 4 s of a scene
+        if prev is not None and t - prev[0] < 4.0:
+            k = (t - prev[0]) / 4.0
+            i = self.scenes.index(prev)
+            before = self.scenes[i - 1] if i > 0 else (0, *self.default)
+            hue = before[1] + (hue - before[1]) * k if abs(hue - before[1]) <= 180 else hue
+            energy = before[2] + (energy - before[2]) * k
+        for t0, t1, delta in self.pulses:
+            if t0 - 1.0 <= t <= t1 + 1.5:
+                ramp = min(1.0, (t - (t0 - 1.0)) / 1.0, ((t1 + 1.5) - t) / 1.5)
+                energy += delta * max(0.0, ramp)
+        return hue % 360, max(0.0, min(1.0, energy)), glyphs
+CAP_FONT, LABEL_FONT = 50, 28
+CAP_Y, CAP_H = H - 180, 180          # caption strip at the bottom
 STAGE_H = H - CAP_H                  # the area above the captions
 
 
@@ -135,17 +211,20 @@ class Life:
         r, c = self.rng.integers(0, ROWS - 3), self.rng.integers(0, COLS - 3)
         self.cells[r:r + 3, c:c + 3] = g
 
-    def step(self):
+    def step(self, energy=0.4):
         c = self.cells
         n = sum(np.roll(np.roll(c, dr, 0), dc, 1) for dr in (-1, 0, 1) for dc in (-1, 0, 1) if dr or dc)
         born = (c == 0) & (n == 3)
         alive = (c == 1) & ((n == 2) | (n == 3))
         self.cells = (born | alive).astype(np.uint8)
         self.age = np.where(self.cells == 1, self.age + 1, 0)
-        if self.rng.random() < 0.35:
+        if self.rng.random() < 0.1 + 0.8 * energy:
             self.inject()
-        if self.cells.mean() < 0.02:
-            self.cells |= (self.rng.random((ROWS, COLS)) < 0.01).astype(np.uint8)
+        if energy > 0.7 and self.rng.random() < energy - 0.5:
+            self.inject()
+        floor = 0.012 + 0.04 * energy
+        if self.cells.mean() < floor:
+            self.cells |= (self.rng.random((ROWS, COLS)) < 0.006 + 0.02 * energy).astype(np.uint8)
 
 
 def gradient_field():
@@ -162,11 +241,15 @@ def gradient_field():
 GRADIENT_FIELD = gradient_field()
 
 
-def background(life, atlas, mood, phase):
-    """One frame of the automaton as uint8 RGB."""
-    accent = np.array(PALETTE[mood][0], dtype=np.float32)
-    bright = np.array(PALETTE[mood][1], dtype=np.float32)
-    glyphs = PALETTE[mood][2]
+def background(life, atlas, mood, phase, hue=None, energy=0.4, glyphs=None):
+    """One frame of the automaton as uint8 RGB; colour and brightness follow the scene's energy."""
+    if hue is None:
+        accent = np.array(PALETTE[mood][0], dtype=np.float32)
+        bright = np.array(PALETTE[mood][1], dtype=np.float32)
+    else:
+        accent = np.array(oklch_to_rgb(0.62 + 0.1 * energy, 0.10 + 0.07 * energy, hue), dtype=np.float32)
+        bright = np.array(oklch_to_rgb(0.88, 0.06 + 0.06 * energy, hue), dtype=np.float32)
+    glyphs = glyphs or PALETTE[mood][2]
     idx = np.full((ROWS, COLS), atlas.index[DOT_GLYPH], dtype=np.int32)
     live = life.cells == 1
     # the glyph of a living cell follows its position, so structures look like the game's symbols
@@ -175,7 +258,7 @@ def background(life, atlas, mood, phase):
     idx[live] = lut[choice[live]]
     level = np.full((ROWS, COLS), DOT_LEVEL, dtype=np.float32)
     young = np.clip(1.0 - life.age / 14.0, 0, 1)
-    level[live] = 0.5 + 0.3 * young[live]
+    level[live] = (0.38 + 0.4 * energy) + 0.3 * young[live]
     color = np.empty((ROWS, COLS, 3), dtype=np.float32)
     color[:] = accent * 0.9
     color[live] = accent * (1 - young[live, None]) + bright * young[live, None]
@@ -306,24 +389,28 @@ def panel_text(page, kind):
     return im
 
 
-def panel_figure(png):
-    """The book's own figure, softened, in a console frame."""
+def panel_figure(png, framed=True):
+    """The book's own figure in a console frame, or one of its screens as the page renders it."""
     fig = Image.open(png).convert("RGBA")
-    scale = min(1000 / fig.width, 560 / fig.height, 1.0)
+    scale = min(1000 / fig.width, 560 / fig.height, 1.0 if framed else 0.82)
     fig = fig.resize((int(fig.width * scale), int(fig.height * scale)), Image.LANCZOS)
-    fig = fig.filter(ImageFilter.GaussianBlur(0.6))
+    if framed:
+        fig = fig.filter(ImageFilter.GaussianBlur(0.6))
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     x0, y0 = (W - fig.width) // 2, (STAGE_H - fig.height) // 2
-    d.rounded_rectangle((x0 - 24, y0 - 24, x0 + fig.width + 24, y0 + fig.height + 24), 15,
-                        fill=CONSOLE_BG + (235,), outline=CONSOLE_BORDER + (255,), width=2)
+    if framed:
+        d.rounded_rectangle((x0 - 24, y0 - 24, x0 + fig.width + 24, y0 + fig.height + 24), 15,
+                            fill=CONSOLE_BG + (235,), outline=CONSOLE_BORDER + (255,), width=2)
+    else:
+        d.rounded_rectangle((x0 - 6, y0 - 6, x0 + fig.width + 6, y0 + fig.height + 6), 18, fill=PAGE_BG + (230,))
     im.alpha_composite(fig, (x0, y0))
     return im
 
 
 # --- captions ----------------------------------------------------------------------------
 
-def caption_units(words, max_chars=80):
+def caption_units(words, max_chars=64):
     """Group aligned words into caption lines: same speaker, sentence-aware, at most max_chars."""
     units, cur = [], []
 
@@ -375,7 +462,7 @@ class Captions:
         text = " ".join(w["word"] for w in unit["words"])
         total = d.textlength(text, font=self.font)
         x = (W - total) / 2
-        y = 62
+        y = 74
         d.text((x + 2, y + 2), text, font=self.font, fill=(0, 0, 0, 160))  # soft shadow for legibility
         positions = []
         for w in unit["words"]:
@@ -385,8 +472,8 @@ class Captions:
             x += ww + d.textlength(" ", font=self.font)
         if unit["speaker"] not in ("Narrator", "mix"):
             lw = d.textlength(unit["speaker"], font=self.label)
-            d.text(((W - lw) / 2 + 1, 24 + 1), unit["speaker"], font=self.label, fill=(0, 0, 0, 150))
-            d.text(((W - lw) / 2, 24), unit["speaker"], font=self.label, fill=rgb + (255,))
+            d.text(((W - lw) / 2 + 1, 30 + 1), unit["speaker"], font=self.label, fill=(0, 0, 0, 150))
+            d.text(((W - lw) / 2, 30), unit["speaker"], font=self.label, fill=rgb + (255,))
         if len(self.cache) > 6:
             self.cache = {k: v for k, v in self.cache.items() if k >= i - 1}
         self.cache[i] = (strip, positions, rgb)
@@ -407,7 +494,7 @@ class Captions:
         d = ImageDraw.Draw(out)
         for w, (x, ww) in zip(unit["words"], positions):
             if w["t0"] - 0.05 <= t <= w["t1"] + 0.12:
-                d.text((x, 62), w["word"], font=self.font, fill=rgb + (255,))
+                d.text((x, 74), w["word"], font=self.font, fill=rgb + (255,))
                 break
         if a < 1.0:
             out.putalpha(out.getchannel("A").point(lambda v, a=a: int(v * max(a, 0))))
@@ -462,9 +549,13 @@ def events(ch, words):
             ev.append((t - 1.0, max(t + 22.0, ends.get(iid, t) + 2.0), "figure",
                        str(FIGURES / f"ch{ch:02d}_{iid.split(':')[1]}.png")))
         elif it["kind"] in ("device", "message", "sign", "quote", "override") and "svg" not in it:
+            t_end = max(ends.get(iid, t) + 1.5, t + 4.0)
+            shot = SCREENS / f"ch{ch:02d}_{iid.split(':')[1]}.png"
+            if shot.exists() and Image.open(shot).height <= SCREEN_MAX_H:
+                ev.append((t - 0.5, t_end, "screen", str(shot)))   # the page's own rendering
+                continue
             lines = [(u["speaker"], u["text"]) for u in by_id.get(iid, [])]
             pages = panel_pages(lines, it["kind"])
-            t_end = max(ends.get(iid, t) + 1.5, t + 4.0)
             share = (t_end - (t - 0.5)) / len(pages)
             for k, page in enumerate(pages):
                 ev.append((t - 0.5 + k * share, t - 0.5 + (k + 1) * share, "panel", (page, it["kind"])))
@@ -483,7 +574,7 @@ def alpha_at(t, start, end, fade):
     return float(min(1.0, (t - start) / fade, (end - t) / fade, 1.0))
 
 
-FADE = {"card": 1.2, "figure": 1.2, "panel": 1.0, "rule": 0.5}
+FADE = {"card": 1.2, "figure": 1.2, "screen": 1.0, "panel": 1.0, "rule": 0.5}
 
 
 def duration(path):
@@ -497,7 +588,7 @@ def duration(path):
 def inputs_mtime(ch):
     files = [ROOT / "audio" / "work" / f"words_ch{ch:02d}.json", ROOT / "audio" / "work" / f"timeline_ch{ch:02d}.json",
              ROOT / "script" / "final" / f"ch{ch:02d}.json", AUDIO_DIR / f"Snowmoon - Chapter {ch:02d}.m4a",
-             Path(__file__)]
+             Path(__file__), *SCREENS.glob(f"ch{ch:02d}_*.png")]
     return max(f.stat().st_mtime for f in files if f.exists())
 
 
@@ -519,6 +610,7 @@ def render_chapter(ch, preview=None):
     words = json.loads(words_file.read_text())
     ev = events(ch, words)
     caps = Captions(caption_units(words))
+    track = MoodTrack(ch, words, mood)
     rendered = {}
     tmp = out.with_suffix(".tmp.mp4")
     n_frames = math.ceil(secs * FPS)
@@ -531,10 +623,12 @@ def render_chapter(ch, preview=None):
     try:
         for n in range(n_frames):
             t = n / FPS
-            if n % 3 == 0:
-                life.step()
+            hue, energy, glyphs = track.at(t)
+            every = max(1, int(round(4.5 - 3.5 * energy)))   # calm: a step every 4 frames; restless: every frame
+            if n % every == 0:
+                life.step(energy)
             if n % 2 == 0 or base is None:
-                base = background(life, atlas, mood, n // 240)
+                base = background(life, atlas, mood, n // 240, hue, energy, glyphs)
             active = [(e, alpha_at(t, e[0], e[1], FADE[e[2]])) for e in ev if e[0] <= t <= e[1]]
             strip = caps.frame(t)
             if active:
@@ -548,6 +642,8 @@ def render_chapter(ch, preview=None):
                             rendered[key] = card(*e[3])
                         elif e[2] == "figure":
                             rendered[key] = panel_figure(e[3])
+                        elif e[2] == "screen":
+                            rendered[key] = panel_figure(e[3], framed=False)
                         elif e[2] == "rule":
                             rendered[key] = rule_card()
                         else:
