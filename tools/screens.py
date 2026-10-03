@@ -29,6 +29,7 @@ def wrap(styles, element):
  body{{padding:16px 20px}}
  .document-page{{background:transparent;box-shadow:none;padding:0;margin:0;min-height:0;width:600px;animation:none}}
  .device-view{{margin:0 auto}} blockquote{{margin:0}} center{{margin:0}}
+ table.tight-last td:last-child,table.tight-last th:last-child{{white-space:nowrap}}
 </style></head><body><div class="document-page">{element}</div></body></html>"""
 
 
@@ -62,6 +63,10 @@ def main():
             png = OUT / f"ch{ch:02d}_{n}.png"
             if png.exists():
                 continue
+            for table in el.find_all("table"):   # a short last column (a time, a rate, a button) stays on one line
+                last = [tr.find_all(["td", "th"])[-1].get_text(" ", strip=True) for tr in table.find_all("tr") if tr.find_all(["td", "th"])]
+                if last and max(len(t) for t in last) <= 12:
+                    table["class"] = table.get("class", []) + ["tight-last"]
             src = work / f"ch{ch:02d}_{n}.html"
             src.write_text(wrap(styles, str(el)), encoding="utf-8")
             shot = work / png.name

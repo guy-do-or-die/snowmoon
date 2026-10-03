@@ -293,9 +293,11 @@ def main():
     if args.timelines_only:
         return
 
-    # one .m4b with chapter marks
+    # one .m4b with chapter marks, from every chapter file present (a partial run re-joins the rest)
+    made = [(ch, p, seconds(p)) for ch in range(1, 33) for p in [outdir / f"Snowmoon - Chapter {ch:02d}.m4a"] if p.exists()]
+    engine = "ElevenLabs" if args.out == "eleven" else "Kokoro-82M"
     meta = [";FFMETADATA1", "title=Snowmoon", "artist=Vitalik Buterin", "album=Snowmoon", "genre=Audiobook",
-            "comment=Text released under GPL v3 at vitalik.eth.limo/snowmoon. Synthetic voices (Kokoro-82M)."]
+            f"comment=Text released under GPL v3 at vitalik.eth.limo/snowmoon. Synthetic voices ({engine})."]
     start = 0.0
     for ch, _, dur in made:
         meta += ["[CHAPTER]", "TIMEBASE=1/1000", f"START={int(start * 1000)}", f"END={int((start + dur) * 1000)}",

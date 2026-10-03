@@ -49,8 +49,9 @@ def apply_direction(u, run_index, directions):
     return f"{d} {u['text']}"
 
 
-def chunk_lines(lines, directions, limit):
-    """Yield work items: {'turns': [(voice_id, text), ...], 'lines': [line, ...]} or pause markers."""
+def chunk_lines(lines, directions, limit, breaks=()):
+    """Yield work items: {'turns': [(voice_id, text), ...], 'lines': [line, ...]} or pause markers.
+    `breaks`: (id, run index) pairs before which a chunk always ends (see previous_breaks)."""
     run_index = {}
     cur = None
 
@@ -74,13 +75,36 @@ def chunk_lines(lines, directions, limit):
             continue
         voices = {VOICE_ID[u["voice"]]} | ({t[0] for t in cur["turns"]} if cur else set())
         size = len(text) + (sum(len(t[1]) for t in cur["turns"]) if cur else 0)
-        if cur and (u.get("cue") or size > limit or len(voices) > 10):
+        if cur and (u.get("cue") or size > limit or len(voices) > 10 or (u["id"], n) in breaks):
             yield from close()
         if cur is None:
             cur = {"turns": [], "lines": []}
         cur["turns"].append((VOICE_ID[u["voice"]], text))
         cur["lines"].append(u)
     yield from close()
+
+
+def previous_breaks(ch, lines):
+    """Where the chunks of the previous run of this chapter began, as (id, run index) pairs, so that a
+    changed line regenerates only its own chunk: every other chunk keeps its text and hits the cache."""
+    f = ROOT / "audio" / "work" / f"ch{ch:02d}.json"
+    if not f.exists():
+        return set()
+    strip = lambda t: re.sub(r"\s+", " ", re.sub(r"\[[a-z ]+\]", "", t)).strip()
+    by_id = {}
+    for u in lines:
+        if "id" in u:
+            by_id.setdefault(u["id"], []).append(u)
+    breaks = set()
+    for rec in json.loads(f.read_text()):
+        if "id" not in rec:
+            continue
+        head = strip(rec["text"])
+        for n, u in enumerate(by_id.get(rec["id"], [])):
+            if head.startswith(strip(u["text"])[:40]):
+                breaks.add((rec["id"], n))
+                break
+    return breaks
 
 
 def to_flac(mp3):
@@ -136,6 +160,8 @@ def main():
     ap.add_argument("--first")
     ap.add_argument("--last")
     ap.add_argument("--tag", default="")
+    ap.add_argument("--keep-chunks", action="store_true",
+                    help="keep the chunk boundaries of the previous run, so a changed line only regenerates its own chunk")
     args = ap.parse_args()
     if json.loads((ROOT / "script" / "voices.json").read_text())["engine"] != "eleven":
         sys.exit("script/final was built for another engine; run: tools/build.py --engine eleven")
@@ -148,7 +174,7 @@ def main():
         if args.first:
             ids = [u.get("id") for u in lines]
             lines = lines[ids.index(args.first): len(ids) - ids[::-1].index(args.last)]
-        items = list(chunk_lines(lines, directed(ch), args.chunk))
+        items = list(chunk_lines(lines, directed(ch), args.chunk, previous_breaks(ch, lines) if args.keep_chunks else ()))
         jobs = [it for it in items if "turns" in it]
         chars = sum(len(t[1]) for it in jobs for t in it["turns"])
         grand += chars

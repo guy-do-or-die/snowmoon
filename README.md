@@ -37,13 +37,14 @@ sound effects; forced alignment and music did not count against the quota. Run
 |---|---|---|
 | 1 | `tools/extract.py` | `source/html` → `script/raw` + `script/readable`: narration split from speech; screens, tables, signs, charts and diagrams given a spoken form |
 | 2 | `tools/build.py --engine eleven` | every line resolved to a character (`script/cast`) and a voice (`tools/voicesets.py`), text made speakable, credits added → `script/final`, `script/voices.json` |
-| 3 | `tools/synth_eleven.py --chapters 1-32` | speech via the Text to Dialogue API with the directions from `script/directions` → cached clips, `audio/work/chNN.json` |
+| 3 | `tools/synth_eleven.py --chapters 1-32` | speech via the Text to Dialogue API with the directions from `script/directions` → cached clips, `audio/work/chNN.json` (after a text change, `--keep-chunks` regenerates only the chunk that changed) |
 | 4 | `tools/soundscape.py` | ambience beds, spot effects and music cues → `audio/sfx` |
 | 5 | `tools/assemble.py --chapters 1-32 --out eleven` | clips joined with pauses, voices levelled, ambience (`script/scenes`), spot sounds, music, device/PA effects, loudness mastered → `audio/eleven/*.m4a`, `audio/Snowmoon-eleven.m4b`, `audio/work/timeline_chNN.json` (`--plain`: voices only) |
 | 6 | `tools/align.py --chapters 1-32` | word timestamps per clip (forced alignment), mapped to lines and speakers → `audio/work/words_chNN.json` |
-| 7 | `tools/figures.py`, `tools/screens.py` | the book's inline SVG figures → `audio/figures`; its device screens, messages, signs and quotes rendered with its own CSS in headless Chromium → `audio/screens` |
+| 7 | `tools/figures.py`, `tools/screens.py` | the book's inline SVG figures → `audio/figures` (inkscape; an animated figure is photographed mid-animation in Chromium); its device screens, messages, signs and quotes rendered with its own CSS in headless Chromium → `audio/screens` |
 | 8 | `tools/video.py --chapters 1-32` then `--join` | per-chapter videos with audio, `audio/Snowmoon.mp4`, `audio/youtube_chapters.txt` (`--preview 40 --start 600`: 40 s of a chapter from 10:00) |
-| 9 | `tools/teaser.py` | a teaser cut from the chapter videos along the beats in `script/teaser_plan.json` (spans of lines, word-timed, with a music bed per run) → `audio/samples/Snowmoon - teaser.mp4` |
+| 9 | `tools/subtitles.py` | `audio/Snowmoon.srt` for the joined video, from the aligned words |
+| 10 | `tools/teaser.py` | a teaser cut from the chapter videos along the beats in `script/teaser_plan.json` (spans of lines, word-timed, with a music bed per run) → `audio/samples/Snowmoon - teaser.mp4` |
 
 Every step is cached or resumable; re-running regenerates only what changed.
 

@@ -228,7 +228,7 @@ def generic_block(el):
             continue
         if BINARY.match(ln):
             ln = " ".join("zero" if d == "0" else "one" for d in ln.rstrip("."))
-        if not re.search(r"[.!?:]$", ln):
+        if not re.search(r"[.!?:,;]$", ln):   # a line ending in a comma ("With regards,") stays as it is
             ln += "."
         lines.append(ln)
     if control_line:
