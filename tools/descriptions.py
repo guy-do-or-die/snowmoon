@@ -11,7 +11,7 @@ DESCRIPTIONS = {
             "seventies to ninety-two, just above a dashed line at ninety.",
     "2:59": "A slide: two jars of gas, a million molecules each. In the left jar the velocities run from zero "
             "to 999,999; in the right, from zero to 99.",
-    "2:77": "Next slide: the two jars joined by a narrow neck, a molecule slipping through it; two million molecules, "
+    "2:77": "The slide: the two jars joined by a narrow neck, a molecule slipping through it; two million molecules, "
             "velocities from zero to 499,999.",
     "3:139": "A map on his watch: his own dot in the room, and Mov's at the doorway, moving away up the passage.",
     "4:7": "An animation on a grid: a wall of cells down the middle, marked by thin yellow lines; from the "
