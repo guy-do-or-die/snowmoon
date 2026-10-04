@@ -3,7 +3,8 @@
 
 The beats are listed in script/teaser_plan.json: [{"chapter", "first_id", "last_id", "bed"}, ...],
 each a span of consecutive lines, and "bed" one of the three chapter textures (A granular, B sub-pulse,
-C icy) to play underneath. Beats are word-timed cuts from the chapter videos, separated by a short dip to
+C icy) to play underneath; an optional "show" names one of the book's figures (audio/figures/...) to hold
+over the beat, framed as in the chapter videos. Usage: teaser.py [plan.json] [out.mp4]. Beats are word-timed cuts from the chapter videos, separated by a short dip to
 black, with the music bed continuous over each run of beats that share a texture. A title card opens, a
 slate closes; no chapter numbers anywhere (the beats come from many chapters, out of order).
 Nothing is cut mid-word: a span ends strictly after its last word and before any card or scene rule,
@@ -21,9 +22,9 @@ import video  # noqa: E402
 
 from PIL import Image  # noqa: E402
 
-OUT = ROOT / "audio" / "samples" / "Snowmoon - teaser.mp4"
+OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "audio" / "samples" / "Snowmoon - teaser.mp4"
 WORK = ROOT / "audio" / "samples" / "teaser-work"
-PLAN = ROOT / "script" / "teaser_plan.json"
+PLAN = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "script" / "teaser_plan.json"
 GAP = 0.45            # dip to black between beats, seconds
 LAST_GAP = 1.5        # hold after the last word, before the slate
 TITLE_S, SLATE_S = 3.2, 7.0
@@ -94,12 +95,12 @@ def still(name, seconds, fade_in, fade_out, *card_args):
 def main():
     WORK.mkdir(parents=True, exist_ok=True)
     plan = json.loads(PLAN.read_text())
-    pieces = []  # (src, local start, duration, tail silence, bed)
+    pieces = []  # (src, local start, duration, tail silence, bed, figure to hold or None)
     for beat in plan:
         ch = beat["chapter"]
         a, b, tail = span(ch, beat["first_id"], beat["last_id"])
         src, off = source_for(ch, a, b)
-        pieces.append((src, a - off, b - a, tail, beat["bed"]))
+        pieces.append((src, a - off, b - a, tail, beat["bed"], beat.get("show")))
         print(f"ch{ch} {beat['first_id']}-{beat['last_id']}: {a:.2f}-{b:.2f} ({b - a:.1f}s, {tail:.2f}s tail) from {Path(src).name}")
     title = still("title", TITLE_S, 0.7, 0.7, "Snowmoon", None, "by Vitalik Buterin", "a full-cast audiobook")
     slate = still("slate", SLATE_S, 0.8, 1.0, "Snowmoon", None, "by Vitalik Buterin", "a full-cast audiobook  ·  92 voiced characters  ·  10.5 hours")
@@ -112,12 +113,21 @@ def main():
     vparts += ["[vtitle]", "[gtitle]"]; aparts += ["[stitle]"]
     t = TITLE_S + GAP
     runs = []  # (bed, start, end) over consecutive beats sharing a texture; the first run starts under the title
-    for i, (src, local, d, tail, bed) in enumerate(pieces):
+    overlays = []  # (beat index k, png, duration)
+    for i, (src, local, d, tail, bed, show) in enumerate(pieces):
         k = i + 1
         inputs += ["-ss", f"{local:.3f}", "-t", f"{d:.3f}", "-i", str(src)]
         a_out = min(A_FADE, max(0.15, tail - 0.1))      # the audio fade stays inside the silence
-        filt.append(f"[{k}:v]scale={SIZE},fps={video.FPS},format=yuv420p,fade=t=in:st=0:d={V_FADE},"
-                    f"fade=t=out:st={d - V_FADE:.3f}:d={V_FADE},setpts=PTS-STARTPTS[v{k}]")
+        if show:
+            png = WORK / f"show{k}.png"
+            video.panel_figure(str(ROOT / "audio" / show)).save(png)
+            overlays.append((k, png, d))
+            filt.append(f"[{k}:v]scale={SIZE},fps={video.FPS},format=yuv420p,setpts=PTS-STARTPTS[vb{k}]")
+            filt.append(f"[vb{k}][ov{k}]overlay=0:0:shortest=1,fade=t=in:st=0:d={V_FADE},"
+                        f"fade=t=out:st={d - V_FADE:.3f}:d={V_FADE}[v{k}]")
+        else:
+            filt.append(f"[{k}:v]scale={SIZE},fps={video.FPS},format=yuv420p,fade=t=in:st=0:d={V_FADE},"
+                        f"fade=t=out:st={d - V_FADE:.3f}:d={V_FADE},setpts=PTS-STARTPTS[v{k}]")
         filt.append(f"[{k}:a]aresample=44100,afade=t=in:st=0:d=0.2,afade=t=out:st={d - a_out:.3f}:d={a_out},"
                     f"asetpts=PTS-STARTPTS[a{k}]")
         vparts.append(f"[v{k}]"); aparts.append(f"[a{k}]")
@@ -152,6 +162,10 @@ def main():
                     f"adelay={int(lo * 1000)}|{int(lo * 1000)}[bed{j}]")
         filt.append(f"[{acur}][bed{j}]amix=inputs=2:duration=first:normalize=0[am{j}]")
         acur = f"am{j}"
+    for j, (k, png, d) in enumerate(overlays):   # the held figures, fading in and out within the beat
+        idx = n + 1 + len(runs) + j
+        inputs += ["-loop", "1", "-t", f"{d:.3f}", "-i", str(png)]
+        filt.append(f"[{idx}:v]format=rgba,fade=t=in:st=0.4:d=1.0:alpha=1,fade=t=out:st={d - 1.4:.3f}:d=1.0:alpha=1[ov{k}]")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(filt),
                     "-map", "[vcat]", "-map", f"[{acur}]", "-t", f"{total:.3f}",
                     "-c:v", "libx264", "-preset", "medium", "-crf", "22", "-pix_fmt", "yuv420p",
