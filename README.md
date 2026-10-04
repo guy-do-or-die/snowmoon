@@ -7,7 +7,9 @@ figures and screens on the timeline, word-synced captions.
 
 The novel is GPL v3, and its author asks that adaptations publish their pipeline. This is it,
 under the same licence. Pipeline: Copyright (C) 2026 guy-do-or-die, GNU GPL v3 (see `LICENSE`,
-`NOTICE.md`). The audiobook and the video are published on YouTube.
+`NOTICE.md`). The audiobook and the video are published on YouTube: https://youtu.be/u8r_k8sm214
+(The repository was first published as `snowmoon-audiobook`, the name spoken in the credits and shown on the
+end card; GitHub redirects it here.)
 
 ## Setup
 
